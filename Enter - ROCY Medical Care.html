@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<!-- saved from url=(0122)https://enter.converge.ai/project/cf9d2e5d9e4247029a98dfa3b93d0744?surface=code&cloudTab=users&cloudSection=authentication -->
+<html lang="en" class="theme-zinc dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.ͼ1.cm-focused {outline: 1px dotted #212121;}
+.ͼ1 {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
+.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0; overflow-anchor: none;}
+.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
+.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; min-height: 100%; padding: 4px 0; outline: none;}
+.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
+.ͼ2 .cm-content {caret-color: black;}
+.ͼ3 .cm-content {caret-color: white;}
+.ͼ1 .cm-line {display: block; padding: 0 2px 0 6px;}
+.ͼ1 .cm-layer > * {position: absolute;}
+.ͼ1 .cm-layer {position: absolute; left: 0; top: 0; contain: size style;}
+.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
+.ͼ3 .cm-selectionBackground {background: #222;}
+.ͼ2.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #d7d4f0;}
+.ͼ3.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #233;}
+.ͼ1 .cm-cursorLayer {pointer-events: none;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
+@keyframes cm-blink {50% {opacity: 0;}}
+@keyframes cm-blink2 {50% {opacity: 0;}}
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
+.ͼ1 .cm-cursor {display: none;}
+.ͼ3 .cm-cursor {border-left-color: #ddd;}
+.ͼ1 .cm-dropCursor {position: absolute;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer .cm-cursor {display: block;}
+.ͼ1 .cm-iso {unicode-bidi: isolate;}
+.ͼ1 .cm-announced {position: fixed; top: -10000px;}
+@media print {.ͼ1 .cm-announced {display: none;}}
+.ͼ2 .cm-activeLine {background-color: #cceeff44;}
+.ͼ3 .cm-activeLine {background-color: #99eeff33;}
+.ͼ2 .cm-specialChar {color: red;}
+.ͼ3 .cm-specialChar {color: #f78;}
+.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; z-index: 200;}
+.ͼ1 .cm-gutters-before {inset-inline-start: 0;}
+.ͼ1 .cm-gutters-after {inset-inline-end: 0;}
+.ͼ2 .cm-gutters.cm-gutters-before {border-right-width: 1px;}
+.ͼ2 .cm-gutters.cm-gutters-after {border-left-width: 1px;}
+.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border: 0px solid #ddd;}
+.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
+.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
+.ͼ1 .cm-gutterElement {box-sizing: border-box;}
+.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
+.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
+.ͼ3 .cm-activeLineGutter {background-color: #222227;}
+.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0; z-index: 300;}
+.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
+.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
+.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
+.ͼ3 .cm-panels {background-color: #333338; color: white;}
+.ͼ1 .cm-dialog label {font-size: 80%;}
+.ͼ1 .cm-dialog {padding: 2px 19px 4px 6px; position: relative;}
+.ͼ1 .cm-dialog-close {position: absolute; top: 3px; right: 4px; background-color: inherit; border: none; font: inherit; font-size: 14px; padding: 0;}
+.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
+.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
+.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top; user-select: none;}
+.ͼ1 .cm-highlightSpace {background-image: radial-gradient(circle at 50% 55%, #aaa 20%, transparent 5%); background-position: center;}
+.ͼ1 .cm-highlightTab {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="20"><path stroke="%23888" stroke-width="1" fill="none" d="M1 10H196L190 5M190 15L196 10M197 4L197 16"/></svg>'); background-size: auto 100%; background-position: right 90%; background-repeat: no-repeat;}
+.ͼ1 .cm-trailingSpace {background-color: #ff332255;}
+.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
+.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
+.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
+.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
+.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
+.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
+.ͼ2 .cm-textfield {background-color: white;}
+.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
+.ͼ1 .cm-panel.cm-search [name=close] {position: absolute; top: 0; right: 4px; background-color: inherit; border: none; font: inherit; padding: 0; margin: 0;}
+.ͼ1 .cm-panel.cm-search input, .ͼ1 .cm-panel.cm-search button, .ͼ1 .cm-panel.cm-search label {margin: .2em .6em .2em 0;}
+.ͼ1 .cm-panel.cm-search input[type=checkbox] {margin-right: .2em;}
+.ͼ1 .cm-panel.cm-search label {font-size: 80%; white-space: pre;}
+.ͼ1 .cm-panel.cm-search {padding: 2px 6px 4px; position: relative;}
+.ͼ2 .cm-searchMatch {background-color: #ffff0054;}
+.ͼ3 .cm-searchMatch {background-color: #00ffff8a;}
+.ͼ2 .cm-searchMatch-selected {background-color: #ff6a0054;}
+.ͼ3 .cm-searchMatch-selected {background-color: #ff00ff8a;}
+.ͼ1 .cm-selectionMatch {background-color: #99ff7780;}
+.ͼ1 .cm-searchMatch .cm-selectionMatch {background-color: transparent;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > li, .ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > completion-section {padding: 1px 3px; line-height: 1.2;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > li {overflow-x: hidden; text-overflow: ellipsis; cursor: pointer;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > completion-section {display: list-item; border-bottom: 1px solid silver; padding-left: 0.5em; opacity: 0.7;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul {font-family: monospace; white-space: nowrap; overflow: hidden auto; max-width: 700px; max-width: min(700px, 95vw); min-width: 250px; max-height: 10em; height: 100%; list-style: none; margin: 0; padding: 0;}
+.ͼ2 .cm-tooltip-autocomplete ul li[aria-selected] {background: #17c; color: white;}
+.ͼ2 .cm-tooltip-autocomplete-disabled ul li[aria-selected] {background: #777;}
+.ͼ3 .cm-tooltip-autocomplete ul li[aria-selected] {background: #347; color: white;}
+.ͼ3 .cm-tooltip-autocomplete-disabled ul li[aria-selected] {background: #444;}
+.ͼ1 .cm-completionListIncompleteTop:before, .ͼ1 .cm-completionListIncompleteBottom:after {content: "···"; opacity: 0.5; display: block; text-align: center;}
+.ͼ1 .cm-tooltip.cm-completionInfo {position: absolute; padding: 3px 9px; width: max-content; max-width: 400px; box-sizing: border-box; white-space: pre-line;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left {right: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right {left: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left-narrow {right: 30px;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right-narrow {left: 30px;}
+.ͼ2 .cm-snippetField {background-color: #00000022;}
+.ͼ3 .cm-snippetField {background-color: #ffffff22;}
+.ͼ1 .cm-snippetFieldPosition {vertical-align: text-top; width: 0; height: 1.15em; display: inline-block; margin: 0 -0.7px -.7em; border-left: 1.4px dotted #888;}
+.ͼ1 .cm-completionMatchedText {text-decoration: underline;}
+.ͼ1 .cm-completionDetail {margin-left: 0.5em; font-style: italic;}
+.ͼ1 .cm-completionIcon {font-size: 90%; width: .8em; display: inline-block; text-align: center; padding-right: .6em; opacity: 0.6; box-sizing: content-box;}
+.ͼ1 .cm-completionIcon-function:after, .ͼ1 .cm-completionIcon-method:after {content: 'ƒ';}
+.ͼ1 .cm-completionIcon-class:after {content: '○';}
+.ͼ1 .cm-completionIcon-interface:after {content: '◌';}
+.ͼ1 .cm-completionIcon-variable:after {content: '𝑥';}
+.ͼ1 .cm-completionIcon-constant:after {content: '𝐶';}
+.ͼ1 .cm-completionIcon-type:after {content: '𝑡';}
+.ͼ1 .cm-completionIcon-enum:after {content: '∪';}
+.ͼ1 .cm-completionIcon-property:after {content: '□';}
+.ͼ1 .cm-completionIcon-keyword:after {content: '🔑︎';}
+.ͼ1 .cm-completionIcon-namespace:after {content: '▢';}
+.ͼ1 .cm-completionIcon-text:after {content: 'abc'; font-size: 50%; vertical-align: middle;}
+.ͼ1 .cm-tooltip {z-index: 500; box-sizing: border-box;}
+.ͼ2 .cm-tooltip {border: 1px solid #bbb; background-color: #f5f5f5;}
+.ͼ2 .cm-tooltip-section:not(:first-child) {border-top: 1px solid #bbb;}
+.ͼ3 .cm-tooltip {background-color: #333338; color: white;}
+.ͼ1 .cm-tooltip-arrow:before, .ͼ1 .cm-tooltip-arrow:after {content: ''; position: absolute; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:before {border-top: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:after {border-top: 7px solid #f5f5f5; bottom: 1px;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow {bottom: -7px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:before {border-bottom: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:after {border-bottom: 7px solid #f5f5f5; top: 1px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow {top: -7px;}
+.ͼ1 .cm-tooltip-arrow {height: 7px; width: 14px; position: absolute; z-index: -1; overflow: hidden;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:before {border-top-color: #333338; border-bottom-color: #333338;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:after {border-top-color: transparent; border-bottom-color: transparent;}
+.ͼ1.cm-focused .cm-matchingBracket {background-color: #328c8252;}
+.ͼ1.cm-focused .cm-nonmatchingBracket {background-color: #bb555544;}
+.ͼix {color: #569cd6;}
+.ͼiy {color: #c586c0;}
+.ͼiz {color: #9cdcfe;}
+.ͼj0 {font-weight: bold; color: #9cdcfe;}
+.ͼj1 {color: #4ec9b0;}
+.ͼj2 {color: #dcdcaa;}
+.ͼj3 {color: #b5cea8;}
+.ͼj4 {color: #d4d4d4;}
+.ͼj5 {color: #d16969;}
+.ͼj6 {color: #ce9178;}
+.ͼj7 {color: #808080;}
+.ͼj8 {font-weight: bold;}
+.ͼj9 {font-style: italic;}
+.ͼja {text-decoration: line-through;}
+.ͼjb {color: #6a9955;}
+.ͼjc {color: #6a9955; text-decoration: underline;}
+.ͼjd {color: #ff0000;}
+.ͼiw .cm-gutters {background-color: #232322; color: #838383;}
+.ͼiw {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼiw.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼiw .cm-content {caret-color: #c6c6c6;}
+.ͼiw .cm-cursor, .ͼiw .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼiw .cm-activeLine {background-color: #ffffff0f;}
+.ͼiw .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼiw.cm-focused .cm-selectionBackground, .ͼiw .cm-line::selection, .ͼiw .cm-selectionLayer .cm-selectionBackground, .ͼiw .cm-content ::selection {background: #6199ff2f !important;}
+.ͼiw .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼie {color: #569cd6;}
+.ͼif {color: #c586c0;}
+.ͼig {color: #9cdcfe;}
+.ͼih {font-weight: bold; color: #9cdcfe;}
+.ͼii {color: #4ec9b0;}
+.ͼij {color: #dcdcaa;}
+.ͼik {color: #b5cea8;}
+.ͼil {color: #d4d4d4;}
+.ͼim {color: #d16969;}
+.ͼin {color: #ce9178;}
+.ͼio {color: #808080;}
+.ͼip {font-weight: bold;}
+.ͼiq {font-style: italic;}
+.ͼir {text-decoration: line-through;}
+.ͼis {color: #6a9955;}
+.ͼit {color: #6a9955; text-decoration: underline;}
+.ͼiu {color: #ff0000;}
+.ͼid .cm-gutters {background-color: #232322; color: #838383;}
+.ͼid {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼid.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼid .cm-content {caret-color: #c6c6c6;}
+.ͼid .cm-cursor, .ͼid .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼid .cm-activeLine {background-color: #ffffff0f;}
+.ͼid .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼid.cm-focused .cm-selectionBackground, .ͼid .cm-line::selection, .ͼid .cm-selectionLayer .cm-selectionBackground, .ͼid .cm-content ::selection {background: #6199ff2f !important;}
+.ͼid .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼhv {color: #569cd6;}
+.ͼhw {color: #c586c0;}
+.ͼhx {color: #9cdcfe;}
+.ͼhy {font-weight: bold; color: #9cdcfe;}
+.ͼhz {color: #4ec9b0;}
+.ͼi0 {color: #dcdcaa;}
+.ͼi1 {color: #b5cea8;}
+.ͼi2 {color: #d4d4d4;}
+.ͼi3 {color: #d16969;}
+.ͼi4 {color: #ce9178;}
+.ͼi5 {color: #808080;}
+.ͼi6 {font-weight: bold;}
+.ͼi7 {font-style: italic;}
+.ͼi8 {text-decoration: line-through;}
+.ͼi9 {color: #6a9955;}
+.ͼia {color: #6a9955; text-decoration: underline;}
+.ͼib {color: #ff0000;}
+.ͼhu .cm-gutters {background-color: #232322; color: #838383;}
+.ͼhu {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼhu.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼhu .cm-content {caret-color: #c6c6c6;}
+.ͼhu .cm-cursor, .ͼhu .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼhu .cm-activeLine {background-color: #ffffff0f;}
+.ͼhu .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼhu.cm-focused .cm-selectionBackground, .ͼhu .cm-line::selection, .ͼhu .cm-selectionLayer .cm-selectionBackground, .ͼhu .cm-content ::selection {background: #6199ff2f !important;}
+.ͼhu .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼhc {color: #569cd6;}
+.ͼhd {color: #c586c0;}
+.ͼhe {color: #9cdcfe;}
+.ͼhf {font-weight: bold; color: #9cdcfe;}
+.ͼhg {color: #4ec9b0;}
+.ͼhh {color: #dcdcaa;}
+.ͼhi {color: #b5cea8;}
+.ͼhj {color: #d4d4d4;}
+.ͼhk {color: #d16969;}
+.ͼhl {color: #ce9178;}
+.ͼhm {color: #808080;}
+.ͼhn {font-weight: bold;}
+.ͼho {font-style: italic;}
+.ͼhp {text-decoration: line-through;}
+.ͼhq {color: #6a9955;}
+.ͼhr {color: #6a9955; text-decoration: underline;}
+.ͼhs {color: #ff0000;}
+.ͼhb .cm-gutters {background-color: #232322; color: #838383;}
+.ͼhb {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼhb.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼhb .cm-content {caret-color: #c6c6c6;}
+.ͼhb .cm-cursor, .ͼhb .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼhb .cm-activeLine {background-color: #ffffff0f;}
+.ͼhb .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼhb.cm-focused .cm-selectionBackground, .ͼhb .cm-line::selection, .ͼhb .cm-selectionLayer .cm-selectionBackground, .ͼhb .cm-content ::selection {background: #6199ff2f !important;}
+.ͼhb .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼgt {color: #569cd6;}
+.ͼgu {color: #c586c0;}
+.ͼgv {color: #9cdcfe;}
+.ͼgw {font-weight: bold; color: #9cdcfe;}
+.ͼgx {color: #4ec9b0;}
+.ͼgy {color: #dcdcaa;}
+.ͼgz {color: #b5cea8;}
+.ͼh0 {color: #d4d4d4;}
+.ͼh1 {color: #d16969;}
+.ͼh2 {color: #ce9178;}
+.ͼh3 {color: #808080;}
+.ͼh4 {font-weight: bold;}
+.ͼh5 {font-style: italic;}
+.ͼh6 {text-decoration: line-through;}
+.ͼh7 {color: #6a9955;}
+.ͼh8 {color: #6a9955; text-decoration: underline;}
+.ͼh9 {color: #ff0000;}
+.ͼgs .cm-gutters {background-color: #232322; color: #838383;}
+.ͼgs {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼgs.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼgs .cm-content {caret-color: #c6c6c6;}
+.ͼgs .cm-cursor, .ͼgs .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼgs .cm-activeLine {background-color: #ffffff0f;}
+.ͼgs .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼgs.cm-focused .cm-selectionBackground, .ͼgs .cm-line::selection, .ͼgs .cm-selectionLayer .cm-selectionBackground, .ͼgs .cm-content ::selection {background: #6199ff2f !important;}
+.ͼgs .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼga {color: #569cd6;}
+.ͼgb {color: #c586c0;}
+.ͼgc {color: #9cdcfe;}
+.ͼgd {font-weight: bold; color: #9cdcfe;}
+.ͼge {color: #4ec9b0;}
+.ͼgf {color: #dcdcaa;}
+.ͼgg {color: #b5cea8;}
+.ͼgh {color: #d4d4d4;}
+.ͼgi {color: #d16969;}
+.ͼgj {color: #ce9178;}
+.ͼgk {color: #808080;}
+.ͼgl {font-weight: bold;}
+.ͼgm {font-style: italic;}
+.ͼgn {text-decoration: line-through;}
+.ͼgo {color: #6a9955;}
+.ͼgp {color: #6a9955; text-decoration: underline;}
+.ͼgq {color: #ff0000;}
+.ͼg9 .cm-gutters {background-color: #232322; color: #838383;}
+.ͼg9 {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼg9.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼg9 .cm-content {caret-color: #c6c6c6;}
+.ͼg9 .cm-cursor, .ͼg9 .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼg9 .cm-activeLine {background-color: #ffffff0f;}
+.ͼg9 .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼg9.cm-focused .cm-selectionBackground, .ͼg9 .cm-line::selection, .ͼg9 .cm-selectionLayer .cm-selectionBackground, .ͼg9 .cm-content ::selection {background: #6199ff2f !important;}
+.ͼg9 .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼfr {color: #569cd6;}
+.ͼfs {color: #c586c0;}
+.ͼft {color: #9cdcfe;}
+.ͼfu {font-weight: bold; color: #9cdcfe;}
+.ͼfv {color: #4ec9b0;}
+.ͼfw {color: #dcdcaa;}
+.ͼfx {color: #b5cea8;}
+.ͼfy {color: #d4d4d4;}
+.ͼfz {color: #d16969;}
+.ͼg0 {color: #ce9178;}
+.ͼg1 {color: #808080;}
+.ͼg2 {font-weight: bold;}
+.ͼg3 {font-style: italic;}
+.ͼg4 {text-decoration: line-through;}
+.ͼg5 {color: #6a9955;}
+.ͼg6 {color: #6a9955; text-decoration: underline;}
+.ͼg7 {color: #ff0000;}
+.ͼfq .cm-gutters {background-color: #232322; color: #838383;}
+.ͼfq {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼfq.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼfq .cm-content {caret-color: #c6c6c6;}
+.ͼfq .cm-cursor, .ͼfq .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼfq .cm-activeLine {background-color: #ffffff0f;}
+.ͼfq .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼfq.cm-focused .cm-selectionBackground, .ͼfq .cm-line::selection, .ͼfq .cm-selectionLayer .cm-selectionBackground, .ͼfq .cm-content ::selection {background: #6199ff2f !important;}
+.ͼfq .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼf8 {color: #569cd6;}
+.ͼf9 {color: #c586c0;}
+.ͼfa {color: #9cdcfe;}
+.ͼfb {font-weight: bold; color: #9cdcfe;}
+.ͼfc {color: #4ec9b0;}
+.ͼfd {color: #dcdcaa;}
+.ͼfe {color: #b5cea8;}
+.ͼff {color: #d4d4d4;}
+.ͼfg {color: #d16969;}
+.ͼfh {color: #ce9178;}
+.ͼfi {color: #808080;}
+.ͼfj {font-weight: bold;}
+.ͼfk {font-style: italic;}
+.ͼfl {text-decoration: line-through;}
+.ͼfm {color: #6a9955;}
+.ͼfn {color: #6a9955; text-decoration: underline;}
+.ͼfo {color: #ff0000;}
+.ͼf7 .cm-gutters {background-color: #232322; color: #838383;}
+.ͼf7 {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼf7.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼf7 .cm-content {caret-color: #c6c6c6;}
+.ͼf7 .cm-cursor, .ͼf7 .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼf7 .cm-activeLine {background-color: #ffffff0f;}
+.ͼf7 .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼf7.cm-focused .cm-selectionBackground, .ͼf7 .cm-line::selection, .ͼf7 .cm-selectionLayer .cm-selectionBackground, .ͼf7 .cm-content ::selection {background: #6199ff2f !important;}
+.ͼf7 .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼep {color: #569cd6;}
+.ͼeq {color: #c586c0;}
+.ͼer {color: #9cdcfe;}
+.ͼes {font-weight: bold; color: #9cdcfe;}
+.ͼet {color: #4ec9b0;}
+.ͼeu {color: #dcdcaa;}
+.ͼev {color: #b5cea8;}
+.ͼew {color: #d4d4d4;}
+.ͼex {color: #d16969;}
+.ͼey {color: #ce9178;}
+.ͼez {color: #808080;}
+.ͼf0 {font-weight: bold;}
+.ͼf1 {font-style: italic;}
+.ͼf2 {text-decoration: line-through;}
+.ͼf3 {color: #6a9955;}
+.ͼf4 {color: #6a9955; text-decoration: underline;}
+.ͼf5 {color: #ff0000;}
+.ͼeo .cm-gutters {background-color: #232322; color: #838383;}
+.ͼeo {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼeo.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼeo .cm-content {caret-color: #c6c6c6;}
+.ͼeo .cm-cursor, .ͼeo .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼeo .cm-activeLine {background-color: #ffffff0f;}
+.ͼeo .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼeo.cm-focused .cm-selectionBackground, .ͼeo .cm-line::selection, .ͼeo .cm-selectionLayer .cm-selectionBackground, .ͼeo .cm-content ::selection {background: #6199ff2f !important;}
+.ͼeo .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼe6 {color: #569cd6;}
+.ͼe7 {color: #c586c0;}
+.ͼe8 {color: #9cdcfe;}
+.ͼe9 {font-weight: bold; color: #9cdcfe;}
+.ͼea {color: #4ec9b0;}
+.ͼeb {color: #dcdcaa;}
+.ͼec {color: #b5cea8;}
+.ͼed {color: #d4d4d4;}
+.ͼee {color: #d16969;}
+.ͼef {color: #ce9178;}
+.ͼeg {color: #808080;}
+.ͼeh {font-weight: bold;}
+.ͼei {font-style: italic;}
+.ͼej {text-decoration: line-through;}
+.ͼek {color: #6a9955;}
+.ͼel {color: #6a9955; text-decoration: underline;}
+.ͼem {color: #ff0000;}
+.ͼe5 .cm-gutters {background-color: #232322; color: #838383;}
+.ͼe5 {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼe5.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼe5 .cm-content {caret-color: #c6c6c6;}
+.ͼe5 .cm-cursor, .ͼe5 .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼe5 .cm-activeLine {background-color: #ffffff0f;}
+.ͼe5 .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼe5.cm-focused .cm-selectionBackground, .ͼe5 .cm-line::selection, .ͼe5 .cm-selectionLayer .cm-selectionBackground, .ͼe5 .cm-content ::selection {background: #6199ff2f !important;}
+.ͼe5 .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼdl {color: #569cd6;}
+.ͼdm {color: #c586c0;}
+.ͼdn {color: #9cdcfe;}
+.ͼdo {font-weight: bold; color: #9cdcfe;}
+.ͼdp {color: #4ec9b0;}
+.ͼdq {color: #dcdcaa;}
+.ͼdr {color: #b5cea8;}
+.ͼds {color: #d4d4d4;}
+.ͼdt {color: #d16969;}
+.ͼdu {color: #ce9178;}
+.ͼdv {color: #808080;}
+.ͼdw {font-weight: bold;}
+.ͼdx {font-style: italic;}
+.ͼdy {text-decoration: line-through;}
+.ͼdz {color: #6a9955;}
+.ͼe0 {color: #6a9955; text-decoration: underline;}
+.ͼe1 {color: #ff0000;}
+.ͼdk .cm-gutters {background-color: #232322; color: #838383;}
+.ͼdk {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼdk.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼdk .cm-content {caret-color: #c6c6c6;}
+.ͼdk .cm-cursor, .ͼdk .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼdk .cm-activeLine {background-color: #ffffff0f;}
+.ͼdk .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼdk.cm-focused .cm-selectionBackground, .ͼdk .cm-line::selection, .ͼdk .cm-selectionLayer .cm-selectionBackground, .ͼdk .cm-content ::selection {background: #6199ff2f !important;}
+.ͼdk .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼd2 {color: #569cd6;}
+.ͼd3 {color: #c586c0;}
+.ͼd4 {color: #9cdcfe;}
+.ͼd5 {font-weight: bold; color: #9cdcfe;}
+.ͼd6 {color: #4ec9b0;}
+.ͼd7 {color: #dcdcaa;}
+.ͼd8 {color: #b5cea8;}
+.ͼd9 {color: #d4d4d4;}
+.ͼda {color: #d16969;}
+.ͼdb {color: #ce9178;}
+.ͼdc {color: #808080;}
+.ͼdd {font-weight: bold;}
+.ͼde {font-style: italic;}
+.ͼdf {text-decoration: line-through;}
+.ͼdg {color: #6a9955;}
+.ͼdh {color: #6a9955; text-decoration: underline;}
+.ͼdi {color: #ff0000;}
+.ͼd1 .cm-gutters {background-color: #232322; color: #838383;}
+.ͼd1 {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼd1.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼd1 .cm-content {caret-color: #c6c6c6;}
+.ͼd1 .cm-cursor, .ͼd1 .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼd1 .cm-activeLine {background-color: #ffffff0f;}
+.ͼd1 .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼd1.cm-focused .cm-selectionBackground, .ͼd1 .cm-line::selection, .ͼd1 .cm-selectionLayer .cm-selectionBackground, .ͼd1 .cm-content ::selection {background: #6199ff2f !important;}
+.ͼd1 .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼci {color: #569cd6;}
+.ͼcj {color: #c586c0;}
+.ͼck {color: #9cdcfe;}
+.ͼcl {font-weight: bold; color: #9cdcfe;}
+.ͼcm {color: #4ec9b0;}
+.ͼcn {color: #dcdcaa;}
+.ͼco {color: #b5cea8;}
+.ͼcp {color: #d4d4d4;}
+.ͼcq {color: #d16969;}
+.ͼcr {color: #ce9178;}
+.ͼcs {color: #808080;}
+.ͼct {font-weight: bold;}
+.ͼcu {font-style: italic;}
+.ͼcv {text-decoration: line-through;}
+.ͼcw {color: #6a9955;}
+.ͼcx {color: #6a9955; text-decoration: underline;}
+.ͼcy {color: #ff0000;}
+.ͼch .cm-gutters {background-color: #232322; color: #838383;}
+.ͼch {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼch.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼch .cm-content {caret-color: #c6c6c6;}
+.ͼch .cm-cursor, .ͼch .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼch .cm-activeLine {background-color: #ffffff0f;}
+.ͼch .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼch.cm-focused .cm-selectionBackground, .ͼch .cm-line::selection, .ͼch .cm-selectionLayer .cm-selectionBackground, .ͼch .cm-content ::selection {background: #6199ff2f !important;}
+.ͼch .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼbg {color: #569cd6;}
+.ͼbh {color: #c586c0;}
+.ͼbi {color: #9cdcfe;}
+.ͼbj {font-weight: bold; color: #9cdcfe;}
+.ͼbk {color: #4ec9b0;}
+.ͼbl {color: #dcdcaa;}
+.ͼbm {color: #b5cea8;}
+.ͼbn {color: #d4d4d4;}
+.ͼbo {color: #d16969;}
+.ͼbp {color: #ce9178;}
+.ͼbq {color: #808080;}
+.ͼbr {font-weight: bold;}
+.ͼbs {font-style: italic;}
+.ͼbt {text-decoration: line-through;}
+.ͼbu {color: #6a9955;}
+.ͼbv {color: #6a9955; text-decoration: underline;}
+.ͼbw {color: #ff0000;}
+.ͼbf .cm-gutters {background-color: #232322; color: #838383;}
+.ͼbf {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼbf.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼbf .cm-content {caret-color: #c6c6c6;}
+.ͼbf .cm-cursor, .ͼbf .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼbf .cm-activeLine {background-color: #ffffff0f;}
+.ͼbf .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼbf.cm-focused .cm-selectionBackground, .ͼbf .cm-line::selection, .ͼbf .cm-selectionLayer .cm-selectionBackground, .ͼbf .cm-content ::selection {background: #6199ff2f !important;}
+.ͼbf .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼaw {color: #569cd6;}
+.ͼax {color: #c586c0;}
+.ͼay {color: #9cdcfe;}
+.ͼaz {font-weight: bold; color: #9cdcfe;}
+.ͼb0 {color: #4ec9b0;}
+.ͼb1 {color: #dcdcaa;}
+.ͼb2 {color: #b5cea8;}
+.ͼb3 {color: #d4d4d4;}
+.ͼb4 {color: #d16969;}
+.ͼb5 {color: #ce9178;}
+.ͼb6 {color: #808080;}
+.ͼb7 {font-weight: bold;}
+.ͼb8 {font-style: italic;}
+.ͼb9 {text-decoration: line-through;}
+.ͼba {color: #6a9955;}
+.ͼbb {color: #6a9955; text-decoration: underline;}
+.ͼbc {color: #ff0000;}
+.ͼav .cm-gutters {background-color: #232322; color: #838383;}
+.ͼav {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼav.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼav .cm-content {caret-color: #c6c6c6;}
+.ͼav .cm-cursor, .ͼav .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼav .cm-activeLine {background-color: #ffffff0f;}
+.ͼav .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼav.cm-focused .cm-selectionBackground, .ͼav .cm-line::selection, .ͼav .cm-selectionLayer .cm-selectionBackground, .ͼav .cm-content ::selection {background: #6199ff2f !important;}
+.ͼav .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ9s {color: #569cd6;}
+.ͼ9t {color: #c586c0;}
+.ͼ9u {color: #9cdcfe;}
+.ͼ9v {font-weight: bold; color: #9cdcfe;}
+.ͼ9w {color: #4ec9b0;}
+.ͼ9x {color: #dcdcaa;}
+.ͼ9y {color: #b5cea8;}
+.ͼ9z {color: #d4d4d4;}
+.ͼa0 {color: #d16969;}
+.ͼa1 {color: #ce9178;}
+.ͼa2 {color: #808080;}
+.ͼa3 {font-weight: bold;}
+.ͼa4 {font-style: italic;}
+.ͼa5 {text-decoration: line-through;}
+.ͼa6 {color: #6a9955;}
+.ͼa7 {color: #6a9955; text-decoration: underline;}
+.ͼa8 {color: #ff0000;}
+.ͼ9r .cm-gutters {background-color: #232322; color: #838383;}
+.ͼ9r {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼ9r.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼ9r .cm-content {caret-color: #c6c6c6;}
+.ͼ9r .cm-cursor, .ͼ9r .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ9r .cm-activeLine {background-color: #ffffff0f;}
+.ͼ9r .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ9r.cm-focused .cm-selectionBackground, .ͼ9r .cm-line::selection, .ͼ9r .cm-selectionLayer .cm-selectionBackground, .ͼ9r .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ9r .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ97 {color: #569cd6;}
+.ͼ98 {color: #c586c0;}
+.ͼ99 {color: #9cdcfe;}
+.ͼ9a {font-weight: bold; color: #9cdcfe;}
+.ͼ9b {color: #4ec9b0;}
+.ͼ9c {color: #dcdcaa;}
+.ͼ9d {color: #b5cea8;}
+.ͼ9e {color: #d4d4d4;}
+.ͼ9f {color: #d16969;}
+.ͼ9g {color: #ce9178;}
+.ͼ9h {color: #808080;}
+.ͼ9i {font-weight: bold;}
+.ͼ9j {font-style: italic;}
+.ͼ9k {text-decoration: line-through;}
+.ͼ9l {color: #6a9955;}
+.ͼ9m {color: #6a9955; text-decoration: underline;}
+.ͼ9n {color: #ff0000;}
+.ͼ96 .cm-gutters {background-color: #232322; color: #838383;}
+.ͼ96 {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼ96.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼ96 .cm-content {caret-color: #c6c6c6;}
+.ͼ96 .cm-cursor, .ͼ96 .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ96 .cm-activeLine {background-color: #ffffff0f;}
+.ͼ96 .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ96.cm-focused .cm-selectionBackground, .ͼ96 .cm-line::selection, .ͼ96 .cm-selectionLayer .cm-selectionBackground, .ͼ96 .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ96 .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ8o {color: #569cd6;}
+.ͼ8p {color: #c586c0;}
+.ͼ8q {color: #9cdcfe;}
+.ͼ8r {font-weight: bold; color: #9cdcfe;}
+.ͼ8s {color: #4ec9b0;}
+.ͼ8t {color: #dcdcaa;}
+.ͼ8u {color: #b5cea8;}
+.ͼ8v {color: #d4d4d4;}
+.ͼ8w {color: #d16969;}
+.ͼ8x {color: #ce9178;}
+.ͼ8y {color: #808080;}
+.ͼ8z {font-weight: bold;}
+.ͼ90 {font-style: italic;}
+.ͼ91 {text-decoration: line-through;}
+.ͼ92 {color: #6a9955;}
+.ͼ93 {color: #6a9955; text-decoration: underline;}
+.ͼ94 {color: #ff0000;}
+.ͼ8n .cm-gutters {background-color: #232322; color: #838383;}
+.ͼ8n {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼ8n.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼ8n .cm-content {caret-color: #c6c6c6;}
+.ͼ8n .cm-cursor, .ͼ8n .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ8n .cm-activeLine {background-color: #ffffff0f;}
+.ͼ8n .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ8n.cm-focused .cm-selectionBackground, .ͼ8n .cm-line::selection, .ͼ8n .cm-selectionLayer .cm-selectionBackground, .ͼ8n .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ8n .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ85 {color: #569cd6;}
+.ͼ86 {color: #c586c0;}
+.ͼ87 {color: #9cdcfe;}
+.ͼ88 {font-weight: bold; color: #9cdcfe;}
+.ͼ89 {color: #4ec9b0;}
+.ͼ8a {color: #dcdcaa;}
+.ͼ8b {color: #b5cea8;}
+.ͼ8c {color: #d4d4d4;}
+.ͼ8d {color: #d16969;}
+.ͼ8e {color: #ce9178;}
+.ͼ8f {color: #808080;}
+.ͼ8g {font-weight: bold;}
+.ͼ8h {font-style: italic;}
+.ͼ8i {text-decoration: line-through;}
+.ͼ8j {color: #6a9955;}
+.ͼ8k {color: #6a9955; text-decoration: underline;}
+.ͼ8l {color: #ff0000;}
+.ͼ84 .cm-gutters {background-color: #232322; color: #838383;}
+.ͼ84 {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼ84.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼ84 .cm-content {caret-color: #c6c6c6;}
+.ͼ84 .cm-cursor, .ͼ84 .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ84 .cm-activeLine {background-color: #ffffff0f;}
+.ͼ84 .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ84.cm-focused .cm-selectionBackground, .ͼ84 .cm-line::selection, .ͼ84 .cm-selectionLayer .cm-selectionBackground, .ͼ84 .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ84 .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ7m {color: #569cd6;}
+.ͼ7n {color: #c586c0;}
+.ͼ7o {color: #9cdcfe;}
+.ͼ7p {font-weight: bold; color: #9cdcfe;}
+.ͼ7q {color: #4ec9b0;}
+.ͼ7r {color: #dcdcaa;}
+.ͼ7s {color: #b5cea8;}
+.ͼ7t {color: #d4d4d4;}
+.ͼ7u {color: #d16969;}
+.ͼ7v {color: #ce9178;}
+.ͼ7w {color: #808080;}
+.ͼ7x {font-weight: bold;}
+.ͼ7y {font-style: italic;}
+.ͼ7z {text-decoration: line-through;}
+.ͼ80 {color: #6a9955;}
+.ͼ81 {color: #6a9955; text-decoration: underline;}
+.ͼ82 {color: #ff0000;}
+.ͼ7l .cm-gutters {background-color: #232322; color: #838383;}
+.ͼ7l {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼ7l.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼ7l .cm-content {caret-color: #c6c6c6;}
+.ͼ7l .cm-cursor, .ͼ7l .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ7l .cm-activeLine {background-color: #ffffff0f;}
+.ͼ7l .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ7l.cm-focused .cm-selectionBackground, .ͼ7l .cm-line::selection, .ͼ7l .cm-selectionLayer .cm-selectionBackground, .ͼ7l .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ7l .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ73 {color: #569cd6;}
+.ͼ74 {color: #c586c0;}
+.ͼ75 {color: #9cdcfe;}
+.ͼ76 {font-weight: bold; color: #9cdcfe;}
+.ͼ77 {color: #4ec9b0;}
+.ͼ78 {color: #dcdcaa;}
+.ͼ79 {color: #b5cea8;}
+.ͼ7a {color: #d4d4d4;}
+.ͼ7b {color: #d16969;}
+.ͼ7c {color: #ce9178;}
+.ͼ7d {color: #808080;}
+.ͼ7e {font-weight: bold;}
+.ͼ7f {font-style: italic;}
+.ͼ7g {text-decoration: line-through;}
+.ͼ7h {color: #6a9955;}
+.ͼ7i {color: #6a9955; text-decoration: underline;}
+.ͼ7j {color: #ff0000;}
+.ͼ72 .cm-gutters {background-color: #232322; color: #838383;}
+.ͼ72 {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼ72.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼ72 .cm-content {caret-color: #c6c6c6;}
+.ͼ72 .cm-cursor, .ͼ72 .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ72 .cm-activeLine {background-color: #ffffff0f;}
+.ͼ72 .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ72.cm-focused .cm-selectionBackground, .ͼ72 .cm-line::selection, .ͼ72 .cm-selectionLayer .cm-selectionBackground, .ͼ72 .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ72 .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ6k {color: #569cd6;}
+.ͼ6l {color: #c586c0;}
+.ͼ6m {color: #9cdcfe;}
+.ͼ6n {font-weight: bold; color: #9cdcfe;}
+.ͼ6o {color: #4ec9b0;}
+.ͼ6p {color: #dcdcaa;}
+.ͼ6q {color: #b5cea8;}
+.ͼ6r {color: #d4d4d4;}
+.ͼ6s {color: #d16969;}
+.ͼ6t {color: #ce9178;}
+.ͼ6u {color: #808080;}
+.ͼ6v {font-weight: bold;}
+.ͼ6w {font-style: italic;}
+.ͼ6x {text-decoration: line-through;}
+.ͼ6y {color: #6a9955;}
+.ͼ6z {color: #6a9955; text-decoration: underline;}
+.ͼ70 {color: #ff0000;}
+.ͼ6j .cm-gutters {background-color: #232322; color: #838383;}
+.ͼ6j {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼ6j.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼ6j .cm-content {caret-color: #c6c6c6;}
+.ͼ6j .cm-cursor, .ͼ6j .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ6j .cm-activeLine {background-color: #ffffff0f;}
+.ͼ6j .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ6j.cm-focused .cm-selectionBackground, .ͼ6j .cm-line::selection, .ͼ6j .cm-selectionLayer .cm-selectionBackground, .ͼ6j .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ6j .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ61 {color: #569cd6;}
+.ͼ62 {color: #c586c0;}
+.ͼ63 {color: #9cdcfe;}
+.ͼ64 {font-weight: bold; color: #9cdcfe;}
+.ͼ65 {color: #4ec9b0;}
+.ͼ66 {color: #dcdcaa;}
+.ͼ67 {color: #b5cea8;}
+.ͼ68 {color: #d4d4d4;}
+.ͼ69 {color: #d16969;}
+.ͼ6a {color: #ce9178;}
+.ͼ6b {color: #808080;}
+.ͼ6c {font-weight: bold;}
+.ͼ6d {font-style: italic;}
+.ͼ6e {text-decoration: line-through;}
+.ͼ6f {color: #6a9955;}
+.ͼ6g {color: #6a9955; text-decoration: underline;}
+.ͼ6h {color: #ff0000;}
+.ͼ60 .cm-gutters {background-color: #232322; color: #838383;}
+.ͼ60 {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼ60.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼ60 .cm-content {caret-color: #c6c6c6;}
+.ͼ60 .cm-cursor, .ͼ60 .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ60 .cm-activeLine {background-color: #ffffff0f;}
+.ͼ60 .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ60.cm-focused .cm-selectionBackground, .ͼ60 .cm-line::selection, .ͼ60 .cm-selectionLayer .cm-selectionBackground, .ͼ60 .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ60 .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ5i {color: #569cd6;}
+.ͼ5j {color: #c586c0;}
+.ͼ5k {color: #9cdcfe;}
+.ͼ5l {font-weight: bold; color: #9cdcfe;}
+.ͼ5m {color: #4ec9b0;}
+.ͼ5n {color: #dcdcaa;}
+.ͼ5o {color: #b5cea8;}
+.ͼ5p {color: #d4d4d4;}
+.ͼ5q {color: #d16969;}
+.ͼ5r {color: #ce9178;}
+.ͼ5s {color: #808080;}
+.ͼ5t {font-weight: bold;}
+.ͼ5u {font-style: italic;}
+.ͼ5v {text-decoration: line-through;}
+.ͼ5w {color: #6a9955;}
+.ͼ5x {color: #6a9955; text-decoration: underline;}
+.ͼ5y {color: #ff0000;}
+.ͼ5h .cm-gutters {background-color: #232322; color: #838383;}
+.ͼ5h {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼ5h.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼ5h .cm-content {caret-color: #c6c6c6;}
+.ͼ5h .cm-cursor, .ͼ5h .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ5h .cm-activeLine {background-color: #ffffff0f;}
+.ͼ5h .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ5h.cm-focused .cm-selectionBackground, .ͼ5h .cm-line::selection, .ͼ5h .cm-selectionLayer .cm-selectionBackground, .ͼ5h .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ5h .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ4z {color: #569cd6;}
+.ͼ50 {color: #c586c0;}
+.ͼ51 {color: #9cdcfe;}
+.ͼ52 {font-weight: bold; color: #9cdcfe;}
+.ͼ53 {color: #4ec9b0;}
+.ͼ54 {color: #dcdcaa;}
+.ͼ55 {color: #b5cea8;}
+.ͼ56 {color: #d4d4d4;}
+.ͼ57 {color: #d16969;}
+.ͼ58 {color: #ce9178;}
+.ͼ59 {color: #808080;}
+.ͼ5a {font-weight: bold;}
+.ͼ5b {font-style: italic;}
+.ͼ5c {text-decoration: line-through;}
+.ͼ5d {color: #6a9955;}
+.ͼ5e {color: #6a9955; text-decoration: underline;}
+.ͼ5f {color: #ff0000;}
+.ͼ4y .cm-gutters {background-color: #232322; color: #838383;}
+.ͼ4y {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼ4y.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼ4y .cm-content {caret-color: #c6c6c6;}
+.ͼ4y .cm-cursor, .ͼ4y .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ4y .cm-activeLine {background-color: #ffffff0f;}
+.ͼ4y .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ4y.cm-focused .cm-selectionBackground, .ͼ4y .cm-line::selection, .ͼ4y .cm-selectionLayer .cm-selectionBackground, .ͼ4y .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ4y .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ4g {color: #569cd6;}
+.ͼ4h {color: #c586c0;}
+.ͼ4i {color: #9cdcfe;}
+.ͼ4j {font-weight: bold; color: #9cdcfe;}
+.ͼ4k {color: #4ec9b0;}
+.ͼ4l {color: #dcdcaa;}
+.ͼ4m {color: #b5cea8;}
+.ͼ4n {color: #d4d4d4;}
+.ͼ4o {color: #d16969;}
+.ͼ4p {color: #ce9178;}
+.ͼ4q {color: #808080;}
+.ͼ4r {font-weight: bold;}
+.ͼ4s {font-style: italic;}
+.ͼ4t {text-decoration: line-through;}
+.ͼ4u {color: #6a9955;}
+.ͼ4v {color: #6a9955; text-decoration: underline;}
+.ͼ4w {color: #ff0000;}
+.ͼ4f .cm-gutters {background-color: #232322; color: #838383;}
+.ͼ4f {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼ4f.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼ4f .cm-content {caret-color: #c6c6c6;}
+.ͼ4f .cm-cursor, .ͼ4f .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ4f .cm-activeLine {background-color: #ffffff0f;}
+.ͼ4f .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ4f.cm-focused .cm-selectionBackground, .ͼ4f .cm-line::selection, .ͼ4f .cm-selectionLayer .cm-selectionBackground, .ͼ4f .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ4f .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ3x {color: #569cd6;}
+.ͼ3y {color: #c586c0;}
+.ͼ3z {color: #9cdcfe;}
+.ͼ40 {font-weight: bold; color: #9cdcfe;}
+.ͼ41 {color: #4ec9b0;}
+.ͼ42 {color: #dcdcaa;}
+.ͼ43 {color: #b5cea8;}
+.ͼ44 {color: #d4d4d4;}
+.ͼ45 {color: #d16969;}
+.ͼ46 {color: #ce9178;}
+.ͼ47 {color: #808080;}
+.ͼ48 {font-weight: bold;}
+.ͼ49 {font-style: italic;}
+.ͼ4a {text-decoration: line-through;}
+.ͼ4b {color: #6a9955;}
+.ͼ4c {color: #6a9955; text-decoration: underline;}
+.ͼ4d {color: #ff0000;}
+.ͼ3w .cm-gutters {background-color: #232322; color: #838383;}
+.ͼ3w {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼ3w.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼ3w .cm-content {caret-color: #c6c6c6;}
+.ͼ3w .cm-cursor, .ͼ3w .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ3w .cm-activeLine {background-color: #ffffff0f;}
+.ͼ3w .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ3w.cm-focused .cm-selectionBackground, .ͼ3w .cm-line::selection, .ͼ3w .cm-selectionLayer .cm-selectionBackground, .ͼ3w .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ3w .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ3e {color: #569cd6;}
+.ͼ3f {color: #c586c0;}
+.ͼ3g {color: #9cdcfe;}
+.ͼ3h {font-weight: bold; color: #9cdcfe;}
+.ͼ3i {color: #4ec9b0;}
+.ͼ3j {color: #dcdcaa;}
+.ͼ3k {color: #b5cea8;}
+.ͼ3l {color: #d4d4d4;}
+.ͼ3m {color: #d16969;}
+.ͼ3n {color: #ce9178;}
+.ͼ3o {color: #808080;}
+.ͼ3p {font-weight: bold;}
+.ͼ3q {font-style: italic;}
+.ͼ3r {text-decoration: line-through;}
+.ͼ3s {color: #6a9955;}
+.ͼ3t {color: #6a9955; text-decoration: underline;}
+.ͼ3u {color: #ff0000;}
+.ͼ3d .cm-gutters {background-color: #232322; color: #838383;}
+.ͼ3d {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼ3d.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼ3d .cm-content {caret-color: #c6c6c6;}
+.ͼ3d .cm-cursor, .ͼ3d .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ3d .cm-activeLine {background-color: #ffffff0f;}
+.ͼ3d .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ3d.cm-focused .cm-selectionBackground, .ͼ3d .cm-line::selection, .ͼ3d .cm-selectionLayer .cm-selectionBackground, .ͼ3d .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ3d .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ2u {color: #569cd6;}
+.ͼ2v {color: #c586c0;}
+.ͼ2w {color: #9cdcfe;}
+.ͼ2x {font-weight: bold; color: #9cdcfe;}
+.ͼ2y {color: #4ec9b0;}
+.ͼ2z {color: #dcdcaa;}
+.ͼ30 {color: #b5cea8;}
+.ͼ31 {color: #d4d4d4;}
+.ͼ32 {color: #d16969;}
+.ͼ33 {color: #ce9178;}
+.ͼ34 {color: #808080;}
+.ͼ35 {font-weight: bold;}
+.ͼ36 {font-style: italic;}
+.ͼ37 {text-decoration: line-through;}
+.ͼ38 {color: #6a9955;}
+.ͼ39 {color: #6a9955; text-decoration: underline;}
+.ͼ3a {color: #ff0000;}
+.ͼ2t .cm-gutters {background-color: #232322; color: #838383;}
+.ͼ2t {background-color: #1a1a1a; color: #9cdcfe; font-size: 12px;}
+.ͼ2t.cm-editor .cm-scroller {font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;}
+.ͼ2t .cm-content {caret-color: #c6c6c6;}
+.ͼ2t .cm-cursor, .ͼ2t .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ2t .cm-activeLine {background-color: #ffffff0f;}
+.ͼ2t .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ2t.cm-focused .cm-selectionBackground, .ͼ2t .cm-line::selection, .ͼ2t .cm-selectionLayer .cm-selectionBackground, .ͼ2t .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ2t .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ5 {color: #404740;}
+.ͼ6 {text-decoration: underline;}
+.ͼ7 {text-decoration: underline; font-weight: bold;}
+.ͼ8 {font-style: italic;}
+.ͼ9 {font-weight: bold;}
+.ͼa {text-decoration: line-through;}
+.ͼb {color: #708;}
+.ͼc {color: #219;}
+.ͼd {color: #164;}
+.ͼe {color: #a11;}
+.ͼf {color: #e40;}
+.ͼg {color: #00f;}
+.ͼh {color: #30a;}
+.ͼi {color: #085;}
+.ͼj {color: #167;}
+.ͼk {color: #256;}
+.ͼl {color: #00c;}
+.ͼm {color: #940;}
+.ͼn {color: #f00;}
+.ͼje {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼje .cm-scroller {height: 100% !important;}
+.ͼiv {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼiv .cm-scroller {height: 100% !important;}
+.ͼic {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼic .cm-scroller {height: 100% !important;}
+.ͼht {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼht .cm-scroller {height: 100% !important;}
+.ͼha {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼha .cm-scroller {height: 100% !important;}
+.ͼgr {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼgr .cm-scroller {height: 100% !important;}
+.ͼg8 {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼg8 .cm-scroller {height: 100% !important;}
+.ͼfp {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼfp .cm-scroller {height: 100% !important;}
+.ͼf6 {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼf6 .cm-scroller {height: 100% !important;}
+.ͼen {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼen .cm-scroller {height: 100% !important;}
+.ͼe3 {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼe3 .cm-scroller {height: 100% !important;}
+.ͼdj {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼdj .cm-scroller {height: 100% !important;}
+.ͼcz {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼcz .cm-scroller {height: 100% !important;}
+.ͼbx {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼbx .cm-scroller {height: 100% !important;}
+.ͼbd {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼbd .cm-scroller {height: 100% !important;}
+.ͼaa {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼaa .cm-scroller {height: 100% !important;}
+.ͼ9p {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼ9p .cm-scroller {height: 100% !important;}
+.ͼ95 {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼ95 .cm-scroller {height: 100% !important;}
+.ͼ8m {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼ8m .cm-scroller {height: 100% !important;}
+.ͼ83 {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼ83 .cm-scroller {height: 100% !important;}
+.ͼ7k {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼ7k .cm-scroller {height: 100% !important;}
+.ͼ71 {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼ71 .cm-scroller {height: 100% !important;}
+.ͼ6i {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼ6i .cm-scroller {height: 100% !important;}
+.ͼ5z {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼ5z .cm-scroller {height: 100% !important;}
+.ͼ5g {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼ5g .cm-scroller {height: 100% !important;}
+.ͼ4x {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼ4x .cm-scroller {height: 100% !important;}
+.ͼ4e {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼ4e .cm-scroller {height: 100% !important;}
+.ͼ3v {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼ3v .cm-scroller {height: 100% !important;}
+.ͼ3b {height: 100%; min-height: 100%; max-height: 100%; width: 100%; min-width: 100%; max-width: 100%;}
+.ͼ3b .cm-scroller {height: 100% !important;}
+.ͼ4 .cm-line ::selection, .ͼ4 .cm-line::selection {background-color: transparent !important;}
+.ͼ4 .cm-line {caret-color: transparent !important;}
+.ͼ4 .cm-content :focus::selection, .ͼ4 .cm-content :focus ::selection {background-color: Highlight !important;}
+.ͼ4 .cm-content :focus {caret-color: initial !important;}
+.ͼ4 .cm-content {caret-color: transparent !important;}
+</style>
+  <script async="" src="./Enter - ROCY Medical Care_files/clarity.js.download"></script><script async="" src="./Enter - ROCY Medical Care_files/343226601"></script><script type="text/javascript" async="" src="./Enter - ROCY Medical Care_files/bat.js.download"></script><script type="text/javascript" async="" src="./Enter - ROCY Medical Care_files/js"></script><script type="text/javascript" async="" src="./Enter - ROCY Medical Care_files/js(1)"></script><script async="" src="./Enter - ROCY Medical Care_files/gtm.js.download"></script><script type="text/javascript">window.__APP__ = {"build":{"version":"20260528-131347"}};</script>
+
+  
+  <link href="https://enter.converge.ai/favicon.ico" rel="icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta name="description" content="Go from your creative idea to launch your Apps in minutes by Chat and Enter.">
+  <meta name="keywords" content="Enter, enterpro, AI website builder, AI agent, AI web development, full-chain generation, multi-agent platform, generative AI, AI code, AI design, full-stack development, dev agent, AI software engineer, production-ready code, AI deployment, no-code, low-code">
+
+  <meta property="og:title" content="Enter - chat to build websites &amp; apps">
+  <meta property="og:description" content="Go from your creative idea to launch your Apps in minutes by Chat and Enter.">
+  <meta property="og:image" content="https://assets-cdn.enter.pro/enter-seo-og.jpg">
+
+  <link rel="canonical" href="https://enter.converge.ai/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://enter.converge.ai/#organization",
+        "name": "Enter",
+        "url": "https://enter.converge.ai/",
+        "logo": "https://enter.converge.ai/favicon.ico",
+        "sameAs": [
+          "https://x.com/EnterProAI",
+          "https://www.youtube.com/@EnterProAI",
+          "https://www.tiktok.com/@enter_pro_ai"
+        ],
+        "description": "Enter — Your AI Dev Agent for the Vibe Coding Era. Build professional full-stack apps and websites via natural language with elite templates and cloud integrations."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://enter.converge.ai/#software",
+        "name": "Enter",
+        "url": "https://enter.converge.ai/",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "description": "The AI Dev Agent for Vibe Coding. Professional-grade full-stack mastery with natural language.",
+        "author": {
+          "@id": "https://enter.converge.ai/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://enter.converge.ai/#website",
+        "url": "https://enter.converge.ai/",
+        "name": "Enter",
+        "publisher": {
+          "@id": "https://enter.converge.ai/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Tag Manager: script injected from main.tsx via scheduleGtmScriptLoad (idle / after load) -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link rel="preconnect" href="https://api.enter.pro/">
+  <link rel="preload" as="style" href="./Enter - ROCY Medical Care_files/css2">
+  <link rel="stylesheet" href="./Enter - ROCY Medical Care_files/css2">
+  <title>Enter - ROCY Medical Care</title>
+  <script type="module" crossorigin="" src="./Enter - ROCY Medical Care_files/main-CsIclH6t.js.download"></script>
+  <link rel="stylesheet" crossorigin="" href="./Enter - ROCY Medical Care_files/main-DuHlWjBN.css">
+<link rel="preload" href="https://enter.converge.ai/_enter_web/assets/sandbox-790416ba.js" as="fetch" crossorigin="" id="sandbox-preload">
+<script type="text/javascript" async="" src="./Enter - ROCY Medical Care_files/f.txt"></script><script src="./Enter - ROCY Medical Care_files/343226601.js.download" type="text/javascript" async="" data-ueto="ueto_f26b18dd2f"></script><style type="text/css">[data-vaul-drawer]{touch-action:none;will-change:transform;transition:transform .5s cubic-bezier(.32, .72, 0, 1);animation-duration:.5s;animation-timing-function:cubic-bezier(0.32,0.72,0,1)}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=bottom][data-state=open]{animation-name:slideFromBottom}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=bottom][data-state=closed]{animation-name:slideToBottom}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=top][data-state=open]{animation-name:slideFromTop}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=top][data-state=closed]{animation-name:slideToTop}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=left][data-state=open]{animation-name:slideFromLeft}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=left][data-state=closed]{animation-name:slideToLeft}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=right][data-state=open]{animation-name:slideFromRight}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=right][data-state=closed]{animation-name:slideToRight}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=bottom]{transform:translate3d(0,var(--initial-transform,100%),0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=top]{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=left]{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=right]{transform:translate3d(var(--initial-transform,100%),0,0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=top]{transform:translate3d(0,var(--snap-point-height,0),0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=bottom]{transform:translate3d(0,var(--snap-point-height,0),0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=left]{transform:translate3d(var(--snap-point-height,0),0,0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=right]{transform:translate3d(var(--snap-point-height,0),0,0)}[data-vaul-overlay][data-vaul-snap-points=false]{animation-duration:.5s;animation-timing-function:cubic-bezier(0.32,0.72,0,1)}[data-vaul-overlay][data-vaul-snap-points=false][data-state=open]{animation-name:fadeIn}[data-vaul-overlay][data-state=closed]{animation-name:fadeOut}[data-vaul-animate=false]{animation:none!important}[data-vaul-overlay][data-vaul-snap-points=true]{opacity:0;transition:opacity .5s cubic-bezier(.32, .72, 0, 1)}[data-vaul-overlay][data-vaul-snap-points=true]{opacity:1}[data-vaul-drawer]:not([data-vaul-custom-container=true])::after{content:'';position:absolute;background:inherit;background-color:inherit}[data-vaul-drawer][data-vaul-drawer-direction=top]::after{top:initial;bottom:100%;left:0;right:0;height:200%}[data-vaul-drawer][data-vaul-drawer-direction=bottom]::after{top:100%;bottom:initial;left:0;right:0;height:200%}[data-vaul-drawer][data-vaul-drawer-direction=left]::after{left:initial;right:100%;top:0;bottom:0;width:200%}[data-vaul-drawer][data-vaul-drawer-direction=right]::after{left:100%;right:initial;top:0;bottom:0;width:200%}[data-vaul-overlay][data-vaul-snap-points=true]:not([data-vaul-snap-points-overlay=true]):not(
+[data-state=closed]
+){opacity:0}[data-vaul-overlay][data-vaul-snap-points-overlay=true]{opacity:1}[data-vaul-handle]{display:block;position:relative;opacity:.7;background:#e2e2e4;margin-left:auto;margin-right:auto;height:5px;width:32px;border-radius:1rem;touch-action:pan-y}[data-vaul-handle]:active,[data-vaul-handle]:hover{opacity:1}[data-vaul-handle-hitarea]{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:max(100%,2.75rem);height:max(100%,2.75rem);touch-action:inherit}@media (hover:hover) and (pointer:fine){[data-vaul-drawer]{user-select:none}}@media (pointer:fine){[data-vaul-handle-hitarea]:{width:100%;height:100%}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeOut{to{opacity:0}}@keyframes slideFromBottom{from{transform:translate3d(0,var(--initial-transform,100%),0)}to{transform:translate3d(0,0,0)}}@keyframes slideToBottom{to{transform:translate3d(0,var(--initial-transform,100%),0)}}@keyframes slideFromTop{from{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}to{transform:translate3d(0,0,0)}}@keyframes slideToTop{to{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}}@keyframes slideFromLeft{from{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}to{transform:translate3d(0,0,0)}}@keyframes slideToLeft{to{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}}@keyframes slideFromRight{from{transform:translate3d(var(--initial-transform,100%),0,0)}to{transform:translate3d(0,0,0)}}@keyframes slideToRight{to{transform:translate3d(var(--initial-transform,100%),0,0)}}</style><link rel="stylesheet" crossorigin="" href="./Enter - ROCY Medical Care_files/imagePreview-DYJ8Y1Di.css"><link rel="stylesheet" crossorigin="" href="./Enter - ROCY Medical Care_files/index-DBTV33j6.css"><link rel="stylesheet" crossorigin="" href="./Enter - ROCY Medical Care_files/index-hytLEYsO.css"><link rel="stylesheet" crossorigin="" href="./Enter - ROCY Medical Care_files/RemixCommunityButton-bsirlP_O.css"><link rel="stylesheet" crossorigin="" href="./Enter - ROCY Medical Care_files/index-CDeRU5mu.css"><link rel="stylesheet" crossorigin="" href="./Enter - ROCY Medical Care_files/useReferralRewards-4FZ2P46g.css"><link rel="stylesheet" crossorigin="" href="./Enter - ROCY Medical Care_files/index-1VRpRQ2u.css"><link rel="stylesheet" crossorigin="" href="./Enter - ROCY Medical Care_files/creditSuccessMessage-d6abgxdB.css"><link rel="stylesheet" crossorigin="" href="./Enter - ROCY Medical Care_files/index-uxjT9nZ9.css"><link rel="stylesheet" crossorigin="" href="./Enter - ROCY Medical Care_files/unSaveWarningDialog-Bnm3U0Xf.css"><link rel="stylesheet" crossorigin="" href="./Enter - ROCY Medical Care_files/index-BgwZsqai.css"><link rel="stylesheet" crossorigin="" href="./Enter - ROCY Medical Care_files/editor-c1Hee38C.css"><link rel="stylesheet" crossorigin="" href="./Enter - ROCY Medical Care_files/index-BxIwLBRV.css"></head>
+
+<body style="pointer-events: auto;">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXJCNVLK" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div id="root"><div class="App"><div class="project-detail chat-panel-open"><div class="project-detail-header"><div class="project-detail-header-left" style="width: 22.5521%;"><div class="project-detail-header-left-left"><div data-state="closed" data-slot="tooltip-trigger"><span class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="34.13333333333333" height="32" viewBox="0 0 30 32" fill="none"><path d="M16.5104 25.4122L15.875 23.3915L21.8294 20.9364L15.875 18.4813L16.5104 16.4795L24.3165 19.9166V21.9751L16.5104 25.4122Z" fill="white"></path><path d="M8.57031 25.4078L14.6881 7.12695H17.0663L10.9848 25.4078H8.57031Z" fill="white"></path><path d="M9.26704 16.2227L1.46094 12.7856V10.7271L9.26704 7.29004L9.90242 9.29187L3.948 11.7469L9.90242 14.202L9.26704 16.2227Z" fill="white"></path></svg></span></div><div class="inline-flex items-center justify-center gap-1.5 px-2.5 py-2 h-7 rounded-full bg-fill/30 cursor-pointer hover:bg-secondary/80 transition-colors"><span class="max-w-[120px] overflow-hidden text-ellipsis whitespace-nowrap font-sans font-medium text-xs text-secondary-foreground">ROCY Medical Care</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-up-down size-4 text-muted-foreground shrink-0"><path d="m7 15 5 5 5-5"></path><path d="m7 9 5-5 5 5"></path></svg></div></div><div class="project-detail-header-left-right"><span class="rounded cursor-pointer hover:bg-[#2F2F2F]! w-[28px] h-[28px] inline-flex justify-center items-center" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 10"></polyline></svg></span><span class="hover:bg-[#2F2F2F] rounded w-[28px] h-[28px] inline-flex justify-center items-center cursor-pointer" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panel-left"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M9 3v18"></path></svg></span></div></div><div class="flex-1"><div><div class="project-detail-header-right !gap-4 !px-4"><div class="flex min-w-0 items-center gap-4"><button type="button" aria-label="Open surface menu" class="flex h-8 cursor-pointer items-center rounded-full outline outline-1 outline-border bg-background/80 p-[2px] transition-colors hover:bg-accent/50 data-[state=open]:bg-accent/50" id="radix-_r_ho_" aria-haspopup="menu" aria-expanded="false" data-state="closed" data-slot="dropdown-menu-trigger"><div class="flex h-7 items-center gap-1.5 rounded-full bg-input px-3 py-1 text-xs leading-none font-medium text-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml size-[14px] shrink-0 stroke-[1.5]"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg><span class="whitespace-nowrap">Code</span></div><div class="flex size-7 items-center justify-center rounded-full text-muted-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis size-4 stroke-[1.75]"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></div></button></div><div class="flex shrink-0 items-center gap-3"><button data-slot="button" class="inline-flex items-center justify-center whitespace-nowrap transition-all cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border hover:text-accent-foreground dark:border-input h-8 gap-1.5 has-[&gt;svg]:px-2.5 text-xs font-medium text-foreground rounded-full border-input bg-secondary/70 px-3 shadow-xs hover:bg-secondary dark:bg-input/30 dark:hover:bg-input/50" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x size-4 opacity-70"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>Close</button></div></div></div></div></div><div data-slot="resizable-panel-group" class="flex h-full w-full data-[panel-group-direction=vertical]:flex-col project-detail-content" data-panel-group="" data-panel-group-direction="horizontal" data-panel-group-id="_r_30_" style="display: flex; flex-direction: row; height: 100%; overflow: hidden; width: 100%;"><div data-slot="resizable-panel" class="project-detail-content-chat-panel" id="project-detail-chat-panel" data-panel-group-id="_r_30_" data-panel="" data-panel-collapsible="true" data-panel-id="project-detail-chat-panel" data-panel-size="22.5" style="flex: 22.5 1 0px; overflow: hidden;"><div class="project-detail-content-chat-panel-inner-wrapper"><div class="main-chat-panel"><div class="h-full flex flex-col items-center min-w-[240px]"><div class="max-w-[680px] w-full flex-1 p-4 overflow-hidden main-chat-panel-body" data-at-top="false"><div class="w-full h-full overflow-x-hidden"><div class="h-full w-full relative"><div data-testid="virtuoso-scroller" data-virtuoso-scroller="true" tabindex="0" class="h-full w-full" style="height: 100%; outline: none; overflow-y: auto; position: relative;"><div data-viewport-type="element" style="height: 100%; position: absolute; top: 0px; width: 100%;"><div><div class="flex items-center justify-center pb-4" style="visibility: hidden;"><div class="relative" style="width: 20px; height: 20px;"><div class="absolute origin-top-left" style="transform: scale(0.416667);"><div class="relative w-12 h-12 inline-block origin-center"><div class="absolute w-full h-full origin-center flex justify-center animate-loading-icon" style="rotate: 0deg; animation-delay: 0s;"><div class="block w-1 h-3 rounded-full bg-foreground"></div></div><div class="absolute w-full h-full origin-center flex justify-center animate-loading-icon" style="rotate: 45deg; animation-delay: 0.15s;"><div class="block w-1 h-3 rounded-full bg-foreground"></div></div><div class="absolute w-full h-full origin-center flex justify-center animate-loading-icon" style="rotate: 90deg; animation-delay: 0.3s;"><div class="block w-1 h-3 rounded-full bg-foreground"></div></div><div class="absolute w-full h-full origin-center flex justify-center animate-loading-icon" style="rotate: 135deg; animation-delay: 0.45s;"><div class="block w-1 h-3 rounded-full bg-foreground"></div></div><div class="absolute w-full h-full origin-center flex justify-center animate-loading-icon" style="rotate: 180deg; animation-delay: 0.6s;"><div class="block w-1 h-3 rounded-full bg-foreground"></div></div><div class="absolute w-full h-full origin-center flex justify-center animate-loading-icon" style="rotate: 225deg; animation-delay: 0.75s;"><div class="block w-1 h-3 rounded-full bg-foreground"></div></div><div class="absolute w-full h-full origin-center flex justify-center animate-loading-icon" style="rotate: 270deg; animation-delay: 0.9s;"><div class="block w-1 h-3 rounded-full bg-foreground"></div></div><div class="absolute w-full h-full origin-center flex justify-center animate-loading-icon" style="rotate: 315deg; animation-delay: 1.05s;"><div class="block w-1 h-3 rounded-full bg-foreground"></div></div></div></div></div></div></div><div data-testid="virtuoso-item-list" style="box-sizing: border-box; margin-top: 0px; padding-bottom: 0px; padding-top: 10119px;"><div data-index="11" data-item-index="1000011" data-known-size="511" style="overflow-anchor: none;"><div class="pr-1 pb-4"><div class="main-chat-panel-wrapper-message" style="min-height: auto;"><div class="main-chat-panel-turn-message" style="min-height: auto;"><div class="main-chat-panel-turn-message-item "><div class="main-chat-panel-user-message"><div class="user-message-timestamp">5/28 at 22:36</div><img class="user-message-user-avatar" src="./Enter - ROCY Medical Care_files/unnamed.png"><div class="user-message-content-container"><div class="user-message-content-input-container"><div class="user-message-content-text collapsed">can u make the site appealing and add animations if you change page</div></div><div class="user-message-copy-container"><button data-slot="tooltip-trigger" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 w-7 h-7 text-zinc-400 hover:bg-zinc-700/80" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy size-3.5"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div></div></div></div><div class="main-chat-panel-turn-message-item "><div data-state="closed" data-slot="collapsible" class="flex flex-col items-start w-full"><button type="button" aria-controls="radix-_r_ca_" aria-expanded="false" data-state="closed" data-slot="collapsible-trigger" class="flex flex-col gap-1.5 items-start w-full shrink-0 cursor-pointer"><div class="flex items-center gap-1.5 w-full h-6 select-none text-muted-foreground hover:text-foreground transition-all duration-300 ease-in-out cursor-pointer"><div class="size-6 relative flex items-center justify-center shrink-0"><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-100 scale-100 rotate-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity size-4"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg></div><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-0 scale-50 rotate-90"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-4 transition-transform duration-300"><path d="m6 9 6 6 6-6"></path></svg></div></div><span class="text-sm font-normal">Thought for 20 s</span></div></button><div data-state="closed" id="radix-_r_ca_" data-slot="collapsible-content" class="w-full" style="transition-duration: 0s; animation-name: none; --radix-collapsible-content-height: 48px; --radix-collapsible-content-width: 373.78125px;" hidden=""></div></div></div><div class="main-chat-panel-turn-message-item "><div data-state="closed" data-slot="collapsible" class="flex flex-col items-start w-full"><button type="button" aria-controls="radix-_r_cb_" aria-expanded="false" data-state="closed" data-slot="collapsible-trigger" class="flex flex-col gap-1.5 items-start w-full shrink-0 cursor-pointer"><div class="flex items-center h-6 text-muted-foreground hover:text-foreground gap-1.5 cursor-pointer"><div class="size-6 relative flex items-center justify-center"><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-100 scale-100 rotate-0"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.25 12.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.25 12.5001L11.75 14.0001L14.75 11.0001" stroke="var(--success)" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 8H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 3.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-0 scale-50 rotate-90"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-4 transition-transform duration-300"><path d="m6 9 6 6 6-6"></path></svg></div></div><span class="text-sm font-normal">3 Actions done</span></div></button><div data-state="closed" id="radix-_r_cb_" data-slot="collapsible-content" class="w-full" style="transition-duration: 0s; animation-name: none; --radix-collapsible-content-height: 132px; --radix-collapsible-content-width: 373.78125px;" hidden=""></div></div></div><div class="main-chat-panel-turn-message-item "><div class="main-chat-panel-assistant-message"><div class="" data-testid="streamdown"><p class="text-sm my-3 leading-normal">Now I have a full picture. Let me write the plan:</p>
+</div></div></div><div class="main-chat-panel-turn-message-item "><div data-state="closed" data-slot="collapsible" class="flex flex-col items-start w-full"><button type="button" aria-controls="radix-_r_cc_" aria-expanded="false" data-state="closed" data-slot="collapsible-trigger" class="flex flex-col gap-1.5 items-start w-full shrink-0 cursor-pointer"><div class="flex items-center h-6 text-muted-foreground hover:text-foreground gap-1.5 cursor-pointer"><div class="size-6 relative flex items-center justify-center"><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-100 scale-100 rotate-0"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.25 12.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.25 12.5001L11.75 14.0001L14.75 11.0001" stroke="var(--success)" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 8H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 3.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-0 scale-50 rotate-90"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-4 transition-transform duration-300"><path d="m6 9 6 6 6-6"></path></svg></div></div><span class="text-sm font-normal">1 Action done</span></div></button><div data-state="closed" id="radix-_r_cc_" data-slot="collapsible-content" class="w-full" style="transition-duration: 0s; animation-name: none; --radix-collapsible-content-height: 68px; --radix-collapsible-content-width: 373.78125px;" hidden=""></div></div></div><div class="main-chat-panel-turn-message-item "><div class="tool-call-request-message"><div class="bg-background/30 dark:bg-input/30 border border-border rounded-[10px] w-full flex flex-col overflow-hidden relative"><div class="flex items-center px-3 gap-3"><div class="flex items-center gap-2 flex-1 overflow-hidden"><div class="w-6 h-10 flex items-center justify-center text-[#A3A3A3] [&amp;_svg]:w-4 [&amp;_svg]:h-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-pen"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"></path><path d="M2 6h4"></path><path d="M2 10h4"></path><path d="M2 14h4"></path><path d="M2 18h4"></path><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"></path></svg></div><div class="font-sans font-medium text-sm leading-5 text-[#EDEDED] whitespace-nowrap overflow-hidden text-ellipsis" title="Plan: Site Polish + Page Transition Animations">Plan: Site Polish + Page Transition Animations</div></div><div class="flex gap-2"><button class="w-6 h-6 flex items-center justify-center rounded-lg cursor-pointer text-[#A3A3A3] transition-colors duration-200 hover:bg-white/10 hover:text-[#EDEDED] [&amp;_svg]:w-3 [&amp;_svg]:h-3" title="Copy plan"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><button class="w-6 h-6 flex items-center justify-center rounded-lg cursor-pointer text-[#A3A3A3] transition-colors duration-200 hover:bg-white/10 hover:text-[#EDEDED] [&amp;_svg]:w-3 [&amp;_svg]:h-3" title="Open in preview"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-arrow-out-up-right"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path><path d="m21 3-9 9"></path><path d="M15 3h6v6"></path></svg></button><button class="w-6 h-6 flex items-center justify-center rounded-lg cursor-pointer text-[#A3A3A3] transition-colors duration-200 hover:bg-white/10 hover:text-[#EDEDED] [&amp;_svg]:w-3 [&amp;_svg]:h-3" title="Expand"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-up-down"><path d="m7 15 5 5 5-5"></path><path d="m7 9 5-5 5 5"></path></svg></button></div></div></div></div></div><div class="main-chat-panel-turn-message-item "><div class="turn-actions-bar"><div data-state="closed" data-slot="tooltip-trigger" style="display: inline-flex;"><button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 w-7 h-7 text-zinc-400 hover:bg-zinc-700/80" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-redo2"><path d="m15 14 5-5-5-5"></path><path d="M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13"></path></svg></button></div><div class="turn-actions-divider"><div class="turn-actions-divider-line"></div></div><div class="inline-flex items-center gap-0"><button data-slot="tooltip-trigger" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 w-7 h-7 text-zinc-400 hover:bg-zinc-700/80" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-thumbs-up shrink-0 size-3"><path d="M7 10v12"></path><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"></path></svg></button><button data-slot="tooltip-trigger" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 w-7 h-7 text-zinc-400 hover:bg-zinc-700/80" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-thumbs-down shrink-0 size-3"><path d="M17 14V2"></path><path d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z"></path></svg></button></div><div data-state="closed" data-slot="tooltip-trigger" style="display: inline-flex;"><button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 w-7 h-7 text-zinc-400 hover:bg-zinc-700/80"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy shrink-0 size-3"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="turn-actions-credits-info"><span class="turn-actions-model-name">Auto Model</span><span class="turn-actions-separator mx-2 bg-muted-foreground/50"></span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gem turn-actions-gem-icon"><path d="M6 3h12l4 6-10 13L2 9Z"></path><path d="M11 3 8 9l4 13 4-13-3-6"></path><path d="M2 9h20"></path></svg><span class="turn-actions-credits" data-state="closed" data-slot="tooltip-trigger">33.7</span></div></div></div></div></div></div></div><div data-index="12" data-item-index="1000012" data-known-size="1622" style="overflow-anchor: none;"><div class="pr-1 pb-0"><div class="main-chat-panel-wrapper-message" style="min-height: 711px;"><div class="main-chat-panel-turn-message" style="min-height: auto;"><div class="main-chat-panel-turn-message-item "><div class="main-chat-panel-user-message"><div class="user-message-timestamp">5/28 at 22:38</div><img class="user-message-user-avatar" src="./Enter - ROCY Medical Care_files/unnamed.png"><div class="user-message-content-container"><div class="user-message-content-input-container"><div class="user-message-content-text auto-generated">Build Now</div></div><div class="user-message-copy-container"><button data-slot="tooltip-trigger" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 w-7 h-7 text-zinc-400 hover:bg-zinc-700/80" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy size-3.5"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div></div></div></div><div class="main-chat-panel-turn-message-item "><div data-state="closed" data-slot="collapsible" class="flex flex-col items-start w-full"><button type="button" aria-controls="radix-_r_du_" aria-expanded="false" data-state="closed" data-slot="collapsible-trigger" class="flex flex-col gap-1.5 items-start w-full shrink-0 cursor-pointer"><div class="flex items-center gap-1.5 w-full h-6 select-none text-muted-foreground hover:text-foreground transition-all duration-300 ease-in-out cursor-pointer"><div class="size-6 relative flex items-center justify-center shrink-0"><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-100 scale-100 rotate-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity size-4"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg></div><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-0 scale-50 rotate-90"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-4 transition-transform duration-300"><path d="m6 9 6 6 6-6"></path></svg></div></div><span class="text-sm font-normal">Thought for 10 s</span></div></button><div data-state="closed" id="radix-_r_du_" data-slot="collapsible-content" class="w-full" style="--radix-collapsible-content-height: 68px; --radix-collapsible-content-width: 373.78125px;" hidden=""></div></div></div><div class="main-chat-panel-turn-message-item "><div class="main-chat-panel-assistant-message"><div class="" data-testid="streamdown"><p class="text-sm my-3 leading-normal">Implementing all three parts simultaneously:</p>
+</div></div></div><div class="main-chat-panel-turn-message-item "><div data-state="closed" data-slot="collapsible" class="flex flex-col items-start w-full"><button type="button" aria-controls="radix-_r_dv_" aria-expanded="false" data-state="closed" data-slot="collapsible-trigger" class="flex flex-col gap-1.5 items-start w-full shrink-0 cursor-pointer"><div class="flex items-center h-6 text-muted-foreground hover:text-foreground gap-1.5 cursor-pointer"><div class="size-6 relative flex items-center justify-center"><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-100 scale-100 rotate-0"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.25 12.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.25 12.5001L11.75 14.0001L14.75 11.0001" stroke="var(--success)" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 8H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 3.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-0 scale-50 rotate-90"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-4 transition-transform duration-300"><path d="m6 9 6 6 6-6"></path></svg></div></div><span class="text-sm font-normal">2 Actions done</span></div></button><div data-state="closed" id="radix-_r_dv_" data-slot="collapsible-content" class="w-full" style="--radix-collapsible-content-height: 100px; --radix-collapsible-content-width: 373.78125px;" hidden=""></div></div></div><div class="main-chat-panel-turn-message-item "><div class="main-chat-panel-assistant-message"><div class="" data-testid="streamdown"><p class="text-sm my-3 leading-normal">Now add the <code class="rounded-sm text-muted-foreground font-mono text-xs leading-4 bg-[var(--markdown-inline-code-background)] py-px px-1.5">.page-enter</code> utility class and update the Layout with glassmorphism + PageTransition:</p>
+</div></div></div><div class="main-chat-panel-turn-message-item "><div data-state="closed" data-slot="collapsible" class="flex flex-col items-start w-full"><button type="button" aria-controls="radix-_r_e0_" aria-expanded="false" data-state="closed" data-slot="collapsible-trigger" class="flex flex-col gap-1.5 items-start w-full shrink-0 cursor-pointer"><div class="flex items-center h-6 text-muted-foreground hover:text-foreground gap-1.5 cursor-pointer"><div class="size-6 relative flex items-center justify-center"><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-100 scale-100 rotate-0"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.25 12.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.25 12.5001L11.75 14.0001L14.75 11.0001" stroke="var(--success)" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 8H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 3.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-0 scale-50 rotate-90"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-4 transition-transform duration-300"><path d="m6 9 6 6 6-6"></path></svg></div></div><span class="text-sm font-normal">1 Action done</span></div></button><div data-state="closed" id="radix-_r_e0_" data-slot="collapsible-content" class="w-full" style="transition-duration: 0s; animation-name: none; --radix-collapsible-content-height: 68px; --radix-collapsible-content-width: 373.78125px;" hidden=""></div></div></div><div class="main-chat-panel-turn-message-item "><div class="main-chat-panel-assistant-message"><div class="" data-testid="streamdown"><p class="text-sm my-3 leading-normal">Now update Layout with glassmorphism navbar + PageTransition:</p>
+</div></div></div><div class="main-chat-panel-turn-message-item "><div data-state="closed" data-slot="collapsible" class="flex flex-col items-start w-full"><button type="button" aria-controls="radix-_r_e1_" aria-expanded="false" data-state="closed" data-slot="collapsible-trigger" class="flex flex-col gap-1.5 items-start w-full shrink-0 cursor-pointer"><div class="flex items-center h-6 text-muted-foreground hover:text-foreground gap-1.5 cursor-pointer"><div class="size-6 relative flex items-center justify-center"><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-100 scale-100 rotate-0"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.25 12.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.25 12.5001L11.75 14.0001L14.75 11.0001" stroke="var(--success)" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 8H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 3.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-0 scale-50 rotate-90"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-4 transition-transform duration-300"><path d="m6 9 6 6 6-6"></path></svg></div></div><span class="text-sm font-normal">2 Actions done</span></div></button><div data-state="closed" id="radix-_r_e1_" data-slot="collapsible-content" class="w-full" style="transition-duration: 0s; animation-name: none; --radix-collapsible-content-height: 132px; --radix-collapsible-content-width: 373.78125px;" hidden=""></div></div></div><div class="main-chat-panel-turn-message-item "><div class="main-chat-panel-assistant-message"><div class="" data-testid="streamdown"><p class="text-sm my-3 leading-normal">Now update the navbar <code class="rounded-sm text-muted-foreground font-mono text-xs leading-4 bg-[var(--markdown-inline-code-background)] py-px px-1.5">&lt;header&gt;</code> to use glassmorphism when scrolled:</p>
+</div></div></div><div class="main-chat-panel-turn-message-item "><div data-state="closed" data-slot="collapsible" class="flex flex-col items-start w-full"><button type="button" aria-controls="radix-_r_e2_" aria-expanded="false" data-state="closed" data-slot="collapsible-trigger" class="flex flex-col gap-1.5 items-start w-full shrink-0 cursor-pointer"><div class="flex items-center h-6 text-muted-foreground hover:text-foreground gap-1.5 cursor-pointer"><div class="size-6 relative flex items-center justify-center"><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-100 scale-100 rotate-0"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.25 12.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.25 12.5001L11.75 14.0001L14.75 11.0001" stroke="var(--success)" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 8H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 3.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-0 scale-50 rotate-90"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-4 transition-transform duration-300"><path d="m6 9 6 6 6-6"></path></svg></div></div><span class="text-sm font-normal">1 Action done</span></div></button><div data-state="closed" id="radix-_r_e2_" data-slot="collapsible-content" class="w-full" style="transition-duration: 0s; animation-name: none; --radix-collapsible-content-height: 68px; --radix-collapsible-content-width: 373.78125px;" hidden=""></div></div></div><div class="main-chat-panel-turn-message-item "><div class="main-chat-panel-assistant-message"><div class="" data-testid="streamdown"><p class="text-sm my-3 leading-normal">Now upgrade the active nav link styling and wrap <code class="rounded-sm text-muted-foreground font-mono text-xs leading-4 bg-[var(--markdown-inline-code-background)] py-px px-1.5">&lt;main&gt;</code> with PageTransition:</p>
+</div></div></div><div class="main-chat-panel-turn-message-item "><div data-state="closed" data-slot="collapsible" class="flex flex-col items-start w-full"><button type="button" aria-controls="radix-_r_e3_" aria-expanded="false" data-state="closed" data-slot="collapsible-trigger" class="flex flex-col gap-1.5 items-start w-full shrink-0 cursor-pointer"><div class="flex items-center h-6 text-muted-foreground hover:text-foreground gap-1.5 cursor-pointer"><div class="size-6 relative flex items-center justify-center"><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-100 scale-100 rotate-0"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.25 12.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.25 12.5001L11.75 14.0001L14.75 11.0001" stroke="var(--success)" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 8H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 3.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-0 scale-50 rotate-90"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-4 transition-transform duration-300"><path d="m6 9 6 6 6-6"></path></svg></div></div><span class="text-sm font-normal">3 Actions done</span></div></button><div data-state="closed" id="radix-_r_e3_" data-slot="collapsible-content" class="w-full" style="--radix-collapsible-content-height: 196px; --radix-collapsible-content-width: 373.78125px;" hidden=""></div></div></div><div class="main-chat-panel-turn-message-item "><div class="main-chat-panel-assistant-message"><div class="" data-testid="streamdown"><p class="text-sm my-3 leading-normal">Add hover underline effect on footer links and polish the footer:</p>
+</div></div></div><div class="main-chat-panel-turn-message-item "><div data-state="closed" data-slot="collapsible" class="flex flex-col items-start w-full"><button type="button" aria-controls="radix-_r_e4_" aria-expanded="false" data-state="closed" data-slot="collapsible-trigger" class="flex flex-col gap-1.5 items-start w-full shrink-0 cursor-pointer"><div class="flex items-center h-6 text-muted-foreground hover:text-foreground gap-1.5 cursor-pointer"><div class="size-6 relative flex items-center justify-center"><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-100 scale-100 rotate-0"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.25 12.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.25 12.5001L11.75 14.0001L14.75 11.0001" stroke="var(--success)" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 8H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 3.5H1.25" stroke="#A1A1AA" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="absolute flex items-center justify-center transition-all duration-300 ease-in-out opacity-0 scale-50 rotate-90"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-4 transition-transform duration-300"><path d="m6 9 6 6 6-6"></path></svg></div></div><span class="text-sm font-normal">2 Actions done</span></div></button><div data-state="closed" id="radix-_r_e4_" data-slot="collapsible-content" class="w-full" style="--radix-collapsible-content-height: 132px; --radix-collapsible-content-width: 373.78125px;" hidden=""></div></div></div><div class="main-chat-panel-turn-message-item "><div class="main-chat-panel-assistant-message"><div class="" data-testid="streamdown"><p class="text-sm my-3 leading-normal">All clean. Here's what's new:</p>
+<p class="text-sm my-3 leading-normal"><strong class="font-medium">Page Transitions</strong></p>
+<ul class="markdown-list-ul text-sm font-normal flex flex-col gap-2.5 my-2">
+<li class="[&amp;&gt;*:first-child]:mt-0">Every page now fades in + slides up smoothly (380ms spring easing) when you navigate — powered by a <code class="rounded-sm text-muted-foreground font-mono text-xs leading-4 bg-[var(--markdown-inline-code-background)] py-px px-1.5">PageTransition</code> component keyed to the route</li>
+</ul>
+<p class="text-sm my-3 leading-normal"><strong class="font-medium">Glassmorphism Navbar</strong></p>
+<ul class="markdown-list-ul text-sm font-normal flex flex-col gap-2.5 my-2">
+<li class="[&amp;&gt;*:first-child]:mt-0">After scrolling 10px, the navbar switches to <code class="rounded-sm text-muted-foreground font-mono text-xs leading-4 bg-[var(--markdown-inline-code-background)] py-px px-1.5">bg-card/80 backdrop-blur-md</code> with a soft shadow — giving it that frosted glass effect</li>
+<li class="[&amp;&gt;*:first-child]:mt-0">Mobile menu also gets the blur glass treatment when opened</li>
+<li class="[&amp;&gt;*:first-child]:mt-0">Route changes auto-close the mobile menu</li>
+</ul>
+<p class="text-sm my-3 leading-normal"><strong class="font-medium">Nav Link Animations</strong></p>
+<ul class="markdown-list-ul text-sm font-normal flex flex-col gap-2.5 my-2">
+<li class="[&amp;&gt;*:first-child]:mt-0">Active link: underline indicator with smooth <code class="rounded-sm text-muted-foreground font-mono text-xs leading-4 bg-[var(--markdown-inline-code-background)] py-px px-1.5">scaleX</code> transition</li>
+<li class="[&amp;&gt;*:first-child]:mt-0">Hover state: partial underline preview on hover before clicking</li>
+</ul>
+<p class="text-sm my-3 leading-normal"><strong class="font-medium">Footer</strong></p>
+<ul class="markdown-list-ul text-sm font-normal flex flex-col gap-2.5 my-2">
+<li class="[&amp;&gt;*:first-child]:mt-0">Quick Links now have an animated underline that slides in on hover</li>
+</ul>
+</div></div></div><div class="main-chat-panel-turn-message-item "><div class="main-chat-panel-version-message-container"><div><div class="w-full rounded-[16px] border-2 border-transparent cursor-pointer"><div class="text-card-foreground shadow-sm flex flex-col border-fill/60 border-1 px-0.25 py-0.25 gap-0.5 rounded-[14px] bg-fill/48"><div class="flex items-start gap-2 px-3 py-3 bg-background/40 rounded-[12px]"><div class="flex size-6 shrink-0 items-center justify-center transition-opacity"><svg width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="7" fill="color-mix(in oklch, var(--code-parameter) 60%, transparent)" fill-opacity="0.2"></circle><circle cx="6.99992" cy="7.00005" r="2.69231" fill="color-mix(in oklch, var(--code-parameter) 60%, transparent)"></circle><circle cx="6.99992" cy="7.00005" r="2.69231" fill="color-mix(in oklch, var(--code-parameter) 60%, transparent)"></circle></svg></div><div class="flex flex-col gap-1 flex-1 min-w-0"><div class="text-base font-medium leading-6 tracking-tight transition-opacity line-clamp-1 text-code-parameter/60">UI enhancements</div><p class="text-xs transition-opacity line-clamp-1 text-muted-foreground/60">Click to preview the latest version</p></div></div><div class="flex items-center justify-end px-0.5 py-0.5"><div class="flex items-center justify-end text-muted-foreground"><button data-slot="button" class="inline-flex items-center justify-center whitespace-nowrap font-medium transition-all disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground h-7 text-xs gap-1.5 px-3 has-[&gt;svg]:px-2.5 cursor-pointer rounded-full hover:bg-accent dark:hover:bg-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>Code Diff</button><button data-slot="button" class="inline-flex items-center justify-center whitespace-nowrap font-medium transition-all disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground h-7 text-xs gap-1.5 px-3 has-[&gt;svg]:px-2.5 cursor-pointer rounded-full hover:bg-accent dark:hover:bg-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bookmark"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path></svg>Bookmark</button><button data-slot="tooltip-trigger" class="inline-flex items-center justify-center whitespace-nowrap font-medium transition-all disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent h-7 text-xs gap-1.5 px-3 has-[&gt;svg]:px-2.5 cursor-pointer rounded-full bg-code-parameter/20 text-code-parameter dark:hover:bg-code-parameter hover:text-emerald-800 disabled:opacity-70 disabled:text-code-parameter/60 disabled:dark:hover:bg-code-parameter/20 disabled:cursor-not-allowed!" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>Publish</button></div></div></div></div></div></div></div><div class="main-chat-panel-turn-message-item "><div class="turn-actions-bar"><div data-state="closed" data-slot="tooltip-trigger" style="display: inline-flex;"><button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 w-7 h-7 text-zinc-400 hover:bg-zinc-700/80" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-redo2"><path d="m15 14 5-5-5-5"></path><path d="M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13"></path></svg></button></div><div class="turn-actions-divider"><div class="turn-actions-divider-line"></div></div><div class="inline-flex items-center gap-0"><button data-slot="tooltip-trigger" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 w-7 h-7 text-zinc-400 hover:bg-zinc-700/80" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-thumbs-up shrink-0 size-3"><path d="M7 10v12"></path><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"></path></svg></button><button data-slot="tooltip-trigger" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 w-7 h-7 text-zinc-400 hover:bg-zinc-700/80" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-thumbs-down shrink-0 size-3"><path d="M17 14V2"></path><path d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z"></path></svg></button></div><div data-state="closed" data-slot="tooltip-trigger" style="display: inline-flex;"><button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 w-7 h-7 text-zinc-400 hover:bg-zinc-700/80"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy shrink-0 size-3"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="turn-actions-credits-info"><span class="turn-actions-model-name">Auto Model</span><span class="turn-actions-separator mx-2 bg-muted-foreground/50"></span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gem turn-actions-gem-icon"><path d="M6 3h12l4 6-10 13L2 9Z"></path><path d="M11 3 8 9l4 13 4-13-3-6"></path><path d="M2 9h20"></path></svg><span class="turn-actions-credits" data-state="closed" data-slot="tooltip-trigger">33.51</span></div></div></div></div></div></div></div></div><div><div style="height: 40px;"></div></div></div></div><div class="w-full flex items-center justify-center py-1 absolute bottom-0 left-0 pointer-events-none transition-all duration-300"><span class="pointer-events-auto"><button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[&gt;svg]:px-3 cursor-pointer w-8 h-8 rounded-full backdrop-blur-[50px] border border-[var(--input)] dark:bg-input/30 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></button></span></div></div></div></div><div class="max-w-[680px] w-full flex-shrink-0 p-4"><div class="w-full h-full"><div class="main-chat-panel-chat-area"><div class="main-chat-panel-error-banner"></div><div class="main-chat-panel-input-area"><div class="chatbox-root"><div class="relative w-full p-3 border border-white/15 bg-white/10 shadow-sm main-chat-panel-chat-box bg-input/50!"><div class="flex w-full flex-col gap-2 transition-opacity opacity-100"><div class="contents p-3 text-foreground"><div data-composer-panel-interactive="true" style="min-height: 38px; max-height: 324px; overflow-y: auto;"><div class="relative overflow-y-auto p-0 cursor-text transition-all duration-200 ease-out bg-transparent"><div translate="no" data-composer-panel-interactive="true" class="outline-none bg-transparent text-sm leading-[22px] font-normal selection:bg-[rgba(115,115,115,0.5)]" aria-label="Type &quot;/&quot; to use skills, or build apps &amp; webs as you want..." data-slate-editor="true" data-slate-node="value" contenteditable="true" zindex="-1" style="position: relative; white-space: pre-wrap; overflow-wrap: break-word; min-height: 22px;" role="textbox" aria-multiline="true"><div data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-zero-width="n" data-slate-length="0">﻿<br></span><span data-slate-placeholder="true" contenteditable="false" style="position: absolute; top: 0px; pointer-events: none; width: 100%; max-width: 100%; display: block; opacity: 0.333; user-select: none; text-decoration: none;">Type "/" to use skills, or build apps &amp; webs as you want...</span></span></span></div></div></div></div></div><div role="group" data-slot="input-group-addon" data-align="block-end" class="text-muted-foreground flex h-auto cursor-text items-center text-sm font-medium select-none [&amp;&gt;svg:not([class*=&#39;size-&#39;])]:size-4 [&amp;&gt;kbd]:rounded-[calc(var(--radius)-5px)] group-data-[disabled=true]/input-group:opacity-50 order-last w-full [.border-t]:pt-3 group-has-[&gt;input]/input-group:pb-2.5 justify-between gap-2 p-0"><div class="flex min-w-0 flex-1 items-center justify-start gap-2 overflow-hidden"><input class="hidden" accept=".jpg,.jpeg,.png,.gif,.webp,.svg,.bmp,.tiff,.tif,.ico,.heic,.heif,.avif,.pdf,.docx,.pptx,.xlsx,.csv,.odt,.rtf,.epub,.mp4,.mov,.mpeg,.avi,.webm,.mkv,.mp3,.wav,.m4a,.ogg,.flac,.aac,.js,.ts,.jsx,.tsx,.mjs,.cjs,.py,.pyi,.pyw,.go,.rb,.rake,.gemspec,.php,.phtml,.c,.h,.cc,.cpp,.cxx,.hpp,.hxx,.c++,.h++,.cs,.csx,.java,.kt,.kts,.scala,.groovy,.clj,.cljs,.cljc,.edn,.rs,.swift,.m,.mm,.pl,.pm,.lua,.r,.R,.dart,.ex,.exs,.erl,.hrl,.hs,.fs,.fsx,.jl,.html,.htm,.xhtml,.css,.scss,.sass,.less,.vue,.svelte,.astro,.json,.xml,.yaml,.yml,.toml,.ini,.conf,.config,.properties,.graphql,.gql,.proto,.thrift,.sh,.bash,.zsh,.fish,.bat,.cmd,.ps1,.sql,.md,.markdown,.rst,.tex,.adoc,.txt,.env,.gitignore,.gitattributes,.dockerignore,.eslintrc,.prettierrc,.babelrc,.editorconfig,.log,.asm,.s,.vim,.makefile,.psd,.psb,.ai,.eps,.sketch,.fig,.xd,.afdesign,.afphoto,.indd,.idml,.cdr,.woff,.woff2,.ttf,.otf" multiple="" type="file"><div class="inline-flex cursor-pointer" data-state="closed" data-slot="tooltip-trigger"><button data-slot="button" class="justify-center whitespace-nowrap font-medium transition-all cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border text-sm flex gap-2 items-center size-8 p-0 has-[&gt;svg]:p-0 w-7 h-7 rounded-full border-fill/10 bg-fill/30 hover:border-fill/60 hover:bg-fill/60 text-muted-foreground hover:text-accent-foreground shadow-xs dark:border-fill/10 dark:bg-fill/30 dark:hover:border-fill/60 dark:hover:bg-fill/60" type="button" data-size="icon-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.43" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></button></div><div><div><button class="group inline-flex h-7 py-2 justify-center items-center gap-1.5 rounded-full border shadow-xs cursor-pointer transition-all duration-200 text-xs font-medium leading-4 disabled:opacity-50 disabled:cursor-not-allowed border-fill/10 bg-fill/30 font-roboto text-muted-foreground hover:border-fill/60 hover:bg-fill/60 hover:text-accent-foreground dark:border-fill/10 dark:bg-fill/30 dark:hover:border-fill/60 dark:hover:bg-fill/60 w-7 px-0" data-state="closed" data-slot="tooltip-trigger"><span class="inline-flex shrink-0 transition-colors text-muted-foreground group-hover:text-accent-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="w-4 h-4 shrink-0"><g clip-path="url(#clip0_plan_inactive)"><path d="M1.33325 8.66667C1.68687 8.66667 2.02601 8.52619 2.27606 8.27614C2.52611 8.0261 2.66659 7.68696 2.66659 7.33334V4.66667C2.66659 4.31305 2.80706 3.97391 3.05711 3.72386C3.30716 3.47381 3.6463 3.33334 3.99992 3.33334C4.35354 3.33334 4.69268 3.47381 4.94273 3.72386C5.19278 3.97391 5.33325 4.31305 5.33325 4.66667V13.3333C5.33325 13.687 5.47373 14.0261 5.72378 14.2761C5.97383 14.5262 6.31296 14.6667 6.66659 14.6667C7.02021 14.6667 7.35935 14.5262 7.60939 14.2761C7.85944 14.0261 7.99992 13.687 7.99992 13.3333V2.66667C7.99992 2.31305 8.14039 1.97391 8.39044 1.72386C8.64049 1.47381 8.97963 1.33334 9.33325 1.33334C9.68687 1.33334 10.026 1.47381 10.2761 1.72386C10.5261 1.97391 10.6666 2.31305 10.6666 2.66667V11.3333C10.6666 11.687 10.8071 12.0261 11.0571 12.2761C11.3072 12.5262 11.6463 12.6667 11.9999 12.6667C12.3535 12.6667 12.6927 12.5262 12.9427 12.2761C13.1928 12.0261 13.3333 11.687 13.3333 11.3333V8.66667C13.3333 8.31305 13.4737 7.97391 13.7238 7.72386C13.9738 7.47381 14.313 7.33334 14.6666 7.33334" stroke="currentColor" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path></g><defs><clippath id="clip0_plan_active"><rect width="16" height="16" fill="white"></rect></clippath><clippath id="clip0_plan_inactive"><rect width="16" height="16" fill="white"></rect></clippath></defs></svg></span></button></div></div><div><button type="button" class="group relative inline-flex h-7 items-center justify-center rounded-full font-roboto text-xs font-medium leading-4 shadow-xs transition-all duration-200 cursor-pointer border border-fill/10 bg-fill/30 py-2 text-muted-foreground hover:border-fill/60 hover:bg-fill/60 hover:text-accent-foreground dark:border-fill/10 dark:bg-fill/30 dark:hover:border-fill/60 dark:hover:bg-fill/60 w-7 gap-0 px-0" data-testid="skills-toolbar-button" data-state="closed" data-slot="tooltip-trigger"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true" class="pointer-events-none w-[15px] h-[15px] shrink-0"><path d="M8.5498 3.59082C8.68088 4.03007 8.91827 4.43096 9.24316 4.75586C9.56659 5.07924 9.96545 5.31487 10.4023 5.44629L13.0088 7L10.4023 8.55273C9.96534 8.68414 9.56666 8.92069 9.24316 9.24414C8.91921 9.56809 8.68209 9.96753 8.55078 10.4053L6.99805 13.0107L5.44629 10.4053C5.31497 9.96757 5.07783 9.56806 4.75391 9.24414C4.42984 8.92019 4.03064 8.68298 3.59277 8.55176L0.987305 6.99902L3.59277 5.44531C4.0304 5.31412 4.42995 5.07861 4.75391 4.75488C5.07704 4.43194 5.31266 4.03392 5.44434 3.59766L6.99902 0.988281L8.5498 3.59082Z" stroke="currentColor" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div></div><div class="ml-2 flex shrink-0 items-center gap-2 self-end"><div><div class="relative inline-block"><button type="button" role="combobox" aria-controls="radix-_r_4f_" aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed" data-slot="tooltip-trigger" data-size="default" class="border-input data-[placeholder]:text-muted-foreground [&amp;_svg:not([class*=&#39;text-&#39;])]:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-input/50 justify-between rounded-md border whitespace-nowrap outline-none data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 group inline-flex w-fit !h-7 px-3 py-2 items-center gap-1.5 bg-transparent dark:bg-transparent border-none shadow-none cursor-pointer text-xs font-medium text-zinc-400 transition-all duration-200 focus:outline-none focus:ring-0 focus:border-none focus-visible:outline-none focus-visible:ring-0 hover:bg-zinc-700/80 hover:text-zinc-50 hover:rounded-full disabled:opacity-50 disabled:cursor-not-allowed [&amp;&gt;svg]:hidden [&amp;&gt;[data-slot=select-icon]]:hidden"><div class="inline-flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-atom shrink-0 w-4 h-4 transition-colors text-zinc-400 group-hover:text-zinc-50"><circle cx="12" cy="12" r="1"></circle><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"></path><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"></path></svg><span class="max-w-[120px] overflow-hidden text-ellipsis whitespace-nowrap">Auto</span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-4 opacity-50" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></div></div><div class="inline-flex cursor-pointer" data-state="closed" data-slot="tooltip-trigger"><button data-slot="button" class="justify-center whitespace-nowrap font-medium cursor-pointer [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:border-input dark:hover:bg-input/50 text-sm flex gap-2 items-center size-8 p-0 has-[&gt;svg]:p-0 h-7 w-7 rounded-full border border-border bg-input/30 text-muted-foreground shadow-xs transition-colors hover:border-border/80 hover:bg-input/50 hover:text-foreground disabled:cursor-not-allowed disabled:opacity-50" type="button" data-size="icon-sm" aria-label="Start voice input"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mic h-4 w-4"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg></button></div><div class="cursor-not-allowed" data-state="closed" data-slot="tooltip-trigger"><button data-slot="button" class="whitespace-nowrap font-medium disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-sm shadow-none gap-2 size-8 p-0 has-[&gt;svg]:p-0 flex items-center justify-center w-7 h-7 rounded-full text-white transition-all opacity-50 cursor-not-allowed bg-primary hover:bg-primary/80" type="button" data-size="icon-sm" id="chat-send-btn" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up text-primary-foreground"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg></button></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div data-slot="resizable-handle" class="bg-border focus-visible:ring-ring relative flex w-px items-center justify-center after:absolute after:inset-y-0 after:left-1/2 after:w-1 after:-translate-x-1/2 focus-visible:ring-1 focus-visible:ring-offset-1 focus-visible:outline-hidden data-[panel-group-direction=vertical]:h-px data-[panel-group-direction=vertical]:w-full data-[panel-group-direction=vertical]:after:left-0 data-[panel-group-direction=vertical]:after:h-1 data-[panel-group-direction=vertical]:after:w-full data-[panel-group-direction=vertical]:after:translate-x-0 data-[panel-group-direction=vertical]:after:-translate-y-1/2 [&amp;[data-panel-group-direction=vertical]&gt;div]:rotate-90" role="separator" tabindex="0" data-panel-group-direction="horizontal" data-panel-group-id="_r_30_" data-resize-handle="" data-panel-resize-handle-enabled="true" data-panel-resize-handle-id="_r_32_" data-resize-handle-state="inactive" style="touch-action: none; user-select: none;" aria-controls="project-detail-chat-panel" aria-valuemax="35" aria-valuemin="23" aria-valuenow="23"></div><div data-slot="resizable-panel" class="h-full z-[10] " id="project-detailcontent-panel" data-panel-group-id="_r_30_" data-panel="" data-panel-id="project-detailcontent-panel" data-panel-size="77.5" style="flex: 77.5 1 0px; overflow: hidden;"><div data-slot="resizable-panel-group" class="flex h-full w-full data-[panel-group-direction=vertical]:flex-col code-editor-panel-container" data-panel-group="" data-panel-group-direction="horizontal" data-panel-group-id="_r_hr_" style="display: flex; flex-direction: row; height: 100%; overflow: hidden; width: 100%;"><div data-slot="resizable-panel" class="code-editor-directory-panel" id="code-editor-directory-panel" data-panel-group-id="_r_hr_" data-panel="" data-panel-id="code-editor-directory-panel" data-panel-size="20.0" style="flex: 20 1 0px; overflow: hidden;"><div class="editor-file-tree"><div class="editor-file-tree-search-container"><div data-slot="input-group" role="group" class="group/input-group border-input dark:bg-input/30 relative flex w-full items-center rounded-md border shadow-xs transition-[color,box-shadow] outline-none h-9 min-w-0 has-[&gt;textarea]:h-auto has-[&gt;[data-align=inline-start]]:[&amp;&gt;input]:pl-2 has-[&gt;[data-align=inline-end]]:[&amp;&gt;input]:pr-2 has-[&gt;[data-align=block-start]]:h-auto has-[&gt;[data-align=block-start]]:flex-col has-[&gt;[data-align=block-start]]:[&amp;&gt;input]:pb-3 has-[&gt;[data-align=block-end]]:h-auto has-[&gt;[data-align=block-end]]:flex-col has-[&gt;[data-align=block-end]]:[&amp;&gt;input]:pt-3 has-[[data-slot=input-group-control]:focus-visible]:border-ring has-[[data-slot=input-group-control]:focus-visible]:ring-ring/50 has-[[data-slot=input-group-control]:focus-visible]:ring-[3px] has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-[[data-slot][aria-invalid=true]]:border-destructive dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40 editor-file-tree-search-input-container"><input data-slot="input-group-control" class="text-foreground file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground border-input flex h-9 w-full min-w-0 px-3 py-1 text-base transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive flex-1 rounded-none border-0 bg-transparent shadow-none focus-visible:ring-0 dark:bg-transparent" placeholder="Search file or code" value=""><div role="group" data-slot="input-group-addon" data-align="inline-start" class="text-muted-foreground flex h-auto cursor-text items-center justify-center gap-2 py-1.5 text-sm font-medium select-none [&amp;&gt;svg:not([class*=&#39;size-&#39;])]:size-4 [&amp;&gt;kbd]:rounded-[calc(var(--radius)-5px)] group-data-[disabled=true]/input-group:opacity-50 order-first pl-3 has-[&gt;button]:ml-[-0.45rem] has-[&gt;kbd]:ml-[-0.35rem]"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></div></div></div><div class="editor-file-tree-tree-container"><div role="tree" tabindex="0" style="height: 847px; width: 273.25px; min-height: 0px; min-width: 0px;"><div class="code-editor-directory-panel-tree" style="position: relative; height: 847px; width: 273.25px; overflow: auto; will-change: transform; direction: ltr;"><div style="height: 800px; width: 100%; position: absolute; left: 0px; right: 0px;"></div><div style="height: 800px; width: 100%;"><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="true" tabindex="-1" style="position: absolute; left: 0px; top: 0px; height: 32px; width: 100%;"><div class="isInternal isOpen editor-file-tree-item-directory" style="padding-left: 0px;" draggable="true"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6L8 10L12 6" stroke="#FAFAFA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">public</span></div></div><div role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 32px; height: 32px; width: 100%;"><div class="isClosed isInternal editor-file-tree-item-directory" draggable="true" style="padding-left: 12px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="#FAFAFA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">locales</span></div></div><div role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 64px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 12px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6.0013 7.33317C6.73768 7.33317 7.33464 6.73622 7.33464 5.99984C7.33464 5.26346 6.73768 4.6665 6.0013 4.6665C5.26492 4.6665 4.66797 5.26346 4.66797 5.99984C4.66797 6.73622 5.26492 7.33317 6.0013 7.33317Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 9.99996L11.9427 7.94263C11.6926 7.69267 11.3536 7.55225 11 7.55225C10.6464 7.55225 10.3074 7.69267 10.0573 7.94263L4 14" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">favicon.ico</span></div></div><div role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 96px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 12px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6.0013 7.33317C6.73768 7.33317 7.33464 6.73622 7.33464 5.99984C7.33464 5.26346 6.73768 4.6665 6.0013 4.6665C5.26492 4.6665 4.66797 5.26346 4.66797 5.99984C4.66797 6.73622 5.26492 7.33317 6.0013 7.33317Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 9.99996L11.9427 7.94263C11.6926 7.69267 11.3536 7.55225 11 7.55225C10.6464 7.55225 10.3074 7.69267 10.0573 7.94263L4 14" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">placeholder.svg</span></div></div><div role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 128px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 12px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">robots.txt</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 160px; height: 32px; width: 100%;"><div class="isClosed isInternal editor-file-tree-item-directory" style="padding-left: 0px;" draggable="true"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="#FAFAFA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">src</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="true" tabindex="-1" style="position: absolute; left: 0px; top: 192px; height: 32px; width: 100%;"><div class="isInternal isOpen editor-file-tree-item-directory" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6L8 10L12 6" stroke="#FAFAFA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">supabase</span></div></div><div role="treeitem" aria-level="2" aria-selected="true" aria-expanded="true" tabindex="-1" style="position: absolute; left: 0px; top: 224px; height: 32px; width: 100%;"><div class="isInternal isOpen isSelected isSelectedEnd isSelectedStart editor-file-tree-item-directory" draggable="true" style="padding-left: 12px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6L8 10L12 6" stroke="#FAFAFA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">migrations</span></div></div><div role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 256px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 24px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">migration_20260528_061041000</span></div></div><div role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 288px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 12px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">config.toml</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 320px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">.env.example</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 352px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">.npmrc</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 384px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10.6667 2H3.33333C2.97971 2 2.64057 2.14048 2.39052 2.39052C2.14048 2.64057 2 2.97971 2 3.33333V12.6667C2 13.0203 2.14048 13.3594 2.39052 13.6095C2.64057 13.8595 2.97971 14 3.33333 14H12.6667C13.0203 14 13.3594 13.8595 13.6095 13.6095C13.8595 13.3594 14 13.0203 14 12.6667V5.33333L10.6667 2Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 2V4.66667C10 5.02029 10.1405 5.35943 10.3905 5.60948C10.6406 5.85952 10.9797 6 11.3333 6H14" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">CodeGuideline.md</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 416px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">components.json</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 448px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">eslint.config.js</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 480px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">i18n.config.json</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 512px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M7.9987 14.6668C11.6806 14.6668 14.6654 11.6821 14.6654 8.00016C14.6654 4.31826 11.6806 1.3335 7.9987 1.3335C4.3168 1.3335 1.33203 4.31826 1.33203 8.00016C1.33203 11.6821 4.3168 14.6668 7.9987 14.6668Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7.9987 1.3335C6.28685 3.13093 5.33203 5.51799 5.33203 8.00016C5.33203 10.4823 6.28685 12.8694 7.9987 14.6668C9.71054 12.8694 10.6654 10.4823 10.6654 8.00016C10.6654 5.51799 9.71054 3.13093 7.9987 1.3335Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.33203 8H14.6654" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">index.html</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 544px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">package.json</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 576px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">postcss.config.js</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 608px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10.6667 2H3.33333C2.97971 2 2.64057 2.14048 2.39052 2.39052C2.14048 2.64057 2 2.97971 2 3.33333V12.6667C2 13.0203 2.14048 13.3594 2.39052 13.6095C2.64057 13.8595 2.97971 14 3.33333 14H12.6667C13.0203 14 13.3594 13.8595 13.6095 13.6095C13.8595 13.3594 14 13.0203 14 12.6667V5.33333L10.6667 2Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 2V4.66667C10 5.02029 10.1405 5.35943 10.3905 5.60948C10.6406 5.85952 10.9797 6 11.3333 6H14" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">README.md</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 640px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">tailwind.config.ts</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 672px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">tsconfig.app.json</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 704px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">tsconfig.json</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 736px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">tsconfig.node.json</span></div></div><div role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false" tabindex="-1" style="position: absolute; left: 0px; top: 768px; height: 32px; width: 100%;"><div class="isLeaf editor-file-tree-item-file" draggable="true" style="padding-left: 0px;"><span class="editor-file-tree-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.66797 14.6668H12.0013C12.3549 14.6668 12.6941 14.5264 12.9441 14.2763C13.1942 14.0263 13.3346 13.6871 13.3346 13.3335V4.66683L10.0013 1.3335H4.0013C3.64768 1.3335 3.30854 1.47397 3.05849 1.72402C2.80844 1.97407 2.66797 2.31321 2.66797 2.66683V5.3335" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.33203 1.3335V4.00016C9.33203 4.35378 9.47251 4.69292 9.72256 4.94297C9.9726 5.19302 10.3117 5.3335 10.6654 5.3335H13.332" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.33203 8L1.33203 10L3.33203 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 12L8 10L6 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="editor-file-tree-item-name">vite.config.ts</span></div></div></div></div></div></div></div></div><div data-slot="resizable-handle" class="bg-border focus-visible:ring-ring relative flex w-px items-center justify-center after:absolute after:inset-y-0 after:left-1/2 after:w-1 after:-translate-x-1/2 focus-visible:ring-1 focus-visible:ring-offset-1 focus-visible:outline-hidden data-[panel-group-direction=vertical]:h-px data-[panel-group-direction=vertical]:w-full data-[panel-group-direction=vertical]:after:left-0 data-[panel-group-direction=vertical]:after:h-1 data-[panel-group-direction=vertical]:after:w-full data-[panel-group-direction=vertical]:after:translate-x-0 data-[panel-group-direction=vertical]:after:-translate-y-1/2 [&amp;[data-panel-group-direction=vertical]&gt;div]:rotate-90" role="separator" tabindex="0" data-panel-group-direction="horizontal" data-panel-group-id="_r_hr_" data-resize-handle="" data-panel-resize-handle-enabled="true" data-panel-resize-handle-id="_r_ht_" data-resize-handle-state="inactive" style="touch-action: none; user-select: none;" aria-controls="code-editor-directory-panel" aria-valuemax="50" aria-valuemin="20" aria-valuenow="20"></div><div data-slot="resizable-panel" class="" id="code-editor-code-panel" data-panel-group-id="_r_hr_" data-panel="" data-panel-id="code-editor-code-panel" data-panel-size="80.0" style="flex: 80 1 0px; overflow: hidden;"><div class="code-editor-code-panel"><div class="code-editor-code-panel-header"><div dir="ltr" data-slot="scroll-area" class="relative file-tab-list-container" style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;"><style>[data-radix-scroll-area-viewport] > div[style*="display: table"] {
+          display: block !important;
+          min-width: 0 !important;
+        }</style><style>[data-radix-scroll-area-viewport]{scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;}[data-radix-scroll-area-viewport]::-webkit-scrollbar{display:none}</style><div data-radix-scroll-area-viewport="" data-slot="scroll-area-viewport" class="focus-visible:ring-ring/50 size-full rounded-[inherit] transition-[color,box-shadow] outline-none focus-visible:ring-[3px] focus-visible:outline-1" style="overflow: scroll;"><div style="min-width: 100%; display: table;"><div dir="ltr" data-orientation="horizontal" data-slot="tabs" class="flex flex-col h-full gap-0"><div role="tablist" aria-orientation="horizontal" data-slot="tabs-list" class="bg-muted text-muted-foreground inline-flex w-fit items-center justify-center h-full rounded-none p-[0px]" tabindex="0" data-orientation="horizontal" style="outline: none;"><button type="button" role="tab" aria-selected="false" aria-controls="radix-_r_hv_-content-src/pages/Index.tsx" data-state="inactive" id="radix-_r_hv_-trigger-src/pages/Index.tsx" data-slot="tabs-trigger" class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 file-tab-list-item-container" tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><div class="file-tab-list-item"><div class="file-tab-list-item-name">src/pages/Index.tsx</div><div class="file-tab-list-item-close" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x file-tab-list-item-close-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></div></div></button><button type="button" role="tab" aria-selected="false" aria-controls="radix-_r_hv_-content-public/favicon.ico" data-state="inactive" id="radix-_r_hv_-trigger-public/favicon.ico" data-slot="tabs-trigger" class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 file-tab-list-item-container" tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><div class="file-tab-list-item"><div class="file-tab-list-item-name">public/favicon.ico</div><div class="file-tab-list-item-close" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x file-tab-list-item-close-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></div></div></button><button type="button" role="tab" aria-selected="false" aria-controls="radix-_r_hv_-content-public/placeholder.svg" data-state="inactive" id="radix-_r_hv_-trigger-public/placeholder.svg" data-slot="tabs-trigger" class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 file-tab-list-item-container" tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><div class="file-tab-list-item"><div class="file-tab-list-item-name">public/placeholder.svg</div><div class="file-tab-list-item-close" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x file-tab-list-item-close-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></div></div></button><button type="button" role="tab" aria-selected="false" aria-controls="radix-_r_hv_-content-public/robots.txt" data-state="inactive" id="radix-_r_hv_-trigger-public/robots.txt" data-slot="tabs-trigger" class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 file-tab-list-item-container" tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><div class="file-tab-list-item"><div class="file-tab-list-item-name">public/robots.txt</div><div class="file-tab-list-item-close" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x file-tab-list-item-close-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></div></div></button><button type="button" role="tab" aria-selected="false" aria-controls="radix-_r_hv_-content-.env.example" data-state="inactive" id="radix-_r_hv_-trigger-.env.example" data-slot="tabs-trigger" class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 file-tab-list-item-container" tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><div class="file-tab-list-item"><div class="file-tab-list-item-name">.env.example</div><div class="file-tab-list-item-close" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x file-tab-list-item-close-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></div></div></button><button type="button" role="tab" aria-selected="false" aria-controls="radix-_r_hv_-content-.npmrc" data-state="inactive" id="radix-_r_hv_-trigger-.npmrc" data-slot="tabs-trigger" class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 file-tab-list-item-container" tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><div class="file-tab-list-item"><div class="file-tab-list-item-name">.npmrc</div><div class="file-tab-list-item-close" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x file-tab-list-item-close-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></div></div></button><button type="button" role="tab" aria-selected="false" aria-controls="radix-_r_hv_-content-components.json" data-state="inactive" id="radix-_r_hv_-trigger-components.json" data-slot="tabs-trigger" class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 file-tab-list-item-container" tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><div class="file-tab-list-item"><div class="file-tab-list-item-name">components.json</div><div class="file-tab-list-item-close" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x file-tab-list-item-close-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></div></div></button><button type="button" role="tab" aria-selected="false" aria-controls="radix-_r_hv_-content-index.html" data-state="inactive" id="radix-_r_hv_-trigger-index.html" data-slot="tabs-trigger" class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 file-tab-list-item-container" tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><div class="file-tab-list-item"><div class="file-tab-list-item-name">index.html</div><div class="file-tab-list-item-close" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x file-tab-list-item-close-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></div></div></button><button type="button" role="tab" aria-selected="false" aria-controls="radix-_r_hv_-content-postcss.config.js" data-state="inactive" id="radix-_r_hv_-trigger-postcss.config.js" data-slot="tabs-trigger" class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 file-tab-list-item-container" tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><div class="file-tab-list-item"><div class="file-tab-list-item-name">postcss.config.js</div><div class="file-tab-list-item-close" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x file-tab-list-item-close-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></div></div></button><button type="button" role="tab" aria-selected="false" aria-controls="radix-_r_hv_-content-README.md" data-state="inactive" id="radix-_r_hv_-trigger-README.md" data-slot="tabs-trigger" class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 file-tab-list-item-container" tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><div class="file-tab-list-item"><div class="file-tab-list-item-name">README.md</div><div class="file-tab-list-item-close" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x file-tab-list-item-close-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></div></div></button><button type="button" role="tab" aria-selected="false" aria-controls="radix-_r_hv_-content-tailwind.config.ts" data-state="inactive" id="radix-_r_hv_-trigger-tailwind.config.ts" data-slot="tabs-trigger" class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 file-tab-list-item-container" tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><div class="file-tab-list-item"><div class="file-tab-list-item-name">tailwind.config.ts</div><div class="file-tab-list-item-close" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x file-tab-list-item-close-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></div></div></button><button type="button" role="tab" aria-selected="true" aria-controls="radix-_r_hv_-content-tsconfig.node.json" data-state="active" id="radix-_r_hv_-trigger-tsconfig.node.json" data-slot="tabs-trigger" class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 file-tab-list-item-container" tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><div class="file-tab-list-item"><div class="file-tab-list-item-name">tsconfig.node.json</div><div class="file-tab-list-item-close" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x file-tab-list-item-close-icon"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></div></div></button></div></div></div></div></div></div><div class="code-editor-code-panel-content"><div class="relative w-full h-full"><div class="cm-theme h-full"><div class="cm-editor ͼ1 ͼ3 ͼ4 ͼje ͼiw"><div class="cm-announced" aria-live="polite"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters cm-gutters-before" aria-hidden="true" style="min-height: 394.328px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">99</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 16.7969px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 16.7969px;">2</div><div class="cm-gutterElement" style="height: 16.7969px;">3</div><div class="cm-gutterElement" style="height: 16.7969px;">4</div><div class="cm-gutterElement" style="height: 16.7969px;">5</div><div class="cm-gutterElement" style="height: 16.7969px;">6</div><div class="cm-gutterElement" style="height: 16.7969px;">7</div><div class="cm-gutterElement" style="height: 16.7969px;">8</div><div class="cm-gutterElement" style="height: 16.7969px;">9</div><div class="cm-gutterElement" style="height: 16.7969px;">10</div><div class="cm-gutterElement" style="height: 16.7969px;">11</div><div class="cm-gutterElement" style="height: 16.7969px;">12</div><div class="cm-gutterElement" style="height: 16.7969px;">13</div><div class="cm-gutterElement" style="height: 16.7969px;">14</div><div class="cm-gutterElement" style="height: 16.7969px;">15</div><div class="cm-gutterElement" style="height: 16.7969px;">16</div><div class="cm-gutterElement" style="height: 16.7969px;">17</div><div class="cm-gutterElement" style="height: 16.7969px;">18</div><div class="cm-gutterElement" style="height: 16.7969px;">19</div><div class="cm-gutterElement" style="height: 16.7969px;">20</div><div class="cm-gutterElement" style="height: 16.7969px;">21</div><div class="cm-gutterElement" style="height: 16.7969px;">22</div><div class="cm-gutterElement" style="height: 16.7969px;">23</div></div></div><div style="tab-size: 4;" spellcheck="false" autocorrect="off" autocapitalize="off" writingsuggestions="false" translate="no" contenteditable="true" class="cm-content" role="textbox" aria-multiline="true" data-language="json"><div class="cm-activeLine cm-line"><span class="cm-matchingBracket"><span class="ͼj4">{</span></span></div><div class="cm-line">  <span class="ͼiz">"compilerOptions"</span><span class="ͼj4">:</span> <span class="ͼj4">{</span></div><div class="cm-line">    <span class="ͼiz">"target"</span><span class="ͼj4">:</span> <span class="ͼj6">"ES2022"</span><span class="ͼj4">,</span></div><div class="cm-line">    <span class="ͼiz">"lib"</span><span class="ͼj4">:</span> <span class="ͼj4">[</span><span class="ͼj6">"ES2023"</span><span class="ͼj4">]</span><span class="ͼj4">,</span></div><div class="cm-line">    <span class="ͼiz">"module"</span><span class="ͼj4">:</span> <span class="ͼj6">"ESNext"</span><span class="ͼj4">,</span></div><div class="cm-line">    <span class="ͼiz">"skipLibCheck"</span><span class="ͼj4">:</span> <span class="ͼix">true</span><span class="ͼj4">,</span></div><div class="cm-line"><br></div><div class="cm-line">    /* Bundler mode */</div><div class="cm-line">    <span class="ͼiz">"moduleResolution"</span><span class="ͼj4">:</span> <span class="ͼj6">"bundler"</span><span class="ͼj4">,</span></div><div class="cm-line">    <span class="ͼiz">"allowImportingTsExtensions"</span><span class="ͼj4">:</span> <span class="ͼix">true</span><span class="ͼj4">,</span></div><div class="cm-line">    <span class="ͼiz">"isolatedModules"</span><span class="ͼj4">:</span> <span class="ͼix">true</span><span class="ͼj4">,</span></div><div class="cm-line">    <span class="ͼiz">"moduleDetection"</span><span class="ͼj4">:</span> <span class="ͼj6">"force"</span><span class="ͼj4">,</span></div><div class="cm-line">    <span class="ͼiz">"noEmit"</span><span class="ͼj4">:</span> <span class="ͼix">true</span><span class="ͼj4">,</span></div><div class="cm-line"><br></div><div class="cm-line">    /* Linting */</div><div class="cm-line">    <span class="ͼiz">"strict"</span><span class="ͼj4">:</span> <span class="ͼix">true</span><span class="ͼj4">,</span></div><div class="cm-line">    <span class="ͼiz">"noUnusedLocals"</span><span class="ͼj4">:</span> <span class="ͼix">false</span><span class="ͼj4">,</span></div><div class="cm-line">    <span class="ͼiz">"noUnusedParameters"</span><span class="ͼj4">:</span> <span class="ͼix">false</span><span class="ͼj4">,</span></div><div class="cm-line">    <span class="ͼiz">"noFallthroughCasesInSwitch"</span><span class="ͼj4">:</span> <span class="ͼix">true</span></div><div class="cm-line">  <span class="ͼj4">}</span><span class="ͼj4">,</span></div><div class="cm-line">  <span class="ͼiz">"include"</span><span class="ͼj4">:</span> <span class="ͼj4">[</span><span class="ͼj6">"vite.config.ts"</span><span class="ͼj4">]</span></div><div class="cm-line"><span class="cm-matchingBracket"><span class="ͼj4">}</span></span></div><div class="cm-line"><br></div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms;"><div class="cm-cursor cm-cursor-primary" style="left: 27.2031px; top: 5px; height: 14px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="fixed top-4 left-1/2 transform -translate-x-1/2 z-[10000] space-y-2"></div></div>
+<script defer="" src="./Enter - ROCY Medical Care_files/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;a9ffd0acd2974817b4c2b30148231e3b&quot;,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+
+
+<div id="batBeacon380452480486" style="width: 0px; height: 0px; display: none; visibility: hidden;"><img id="batBeacon502596754737" width="0" height="0" alt="" src="./Enter - ROCY Medical Care_files/0" style="width: 0px; height: 0px; display: none; visibility: hidden;"></div></body></html>
